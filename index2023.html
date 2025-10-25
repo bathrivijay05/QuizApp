@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Learning Analytics Quiz</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="quiz-container">
+      <div id="start-screen" class="screen active">
+        <h2>Select Quiz Mode</h2>
+
+        <button onclick="startQuiz('full')">Start Full Quiz (2023)</button>
+
+        <div id="week-selection">
+          <h3>Or Select by Week:</h3>
+        </div>
+      </div>
+
+      <div id="quiz-screen" class="screen">
+        <h3 id="question-header">Week X - Question Y of Z</h3>
+
+        <div id="question-nav-status"></div>
+
+        <div id="question-card">
+          <p id="question-text"></p>
+
+          <img
+            id="question-image"
+            style="display: none"
+            alt="Question context image"
+          />
+
+          <div id="options-container"></div>
+        </div>
+
+        <div id="feedback-container" style="display: none">
+          <p id="feedback-text"></p>
+
+          <p id="solution-text" class="solution"></p>
+        </div>
+
+        <div id="control-buttons">
+          <button id="prev-btn" onclick="prevQuestion()" disabled>
+            Previous Question
+          </button>
+
+          <button id="submit-btn" onclick="submitAnswer()" disabled>
+            Submit Answer
+          </button>
+
+          <button id="next-btn" onclick="nextQuestion()" disabled>
+            Next Question
+          </button>
+        </div>
+      </div>
+
+      <div id="results-screen" class="screen">
+        <h2>Quiz Complete!</h2>
+
+        <p id="final-score">Your Score: 0/0</p>
+
+        <button onclick="showScreen('start-screen')">Start New Quiz</button>
+      </div>
+    </div>
+
+    <script src="data2023.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
