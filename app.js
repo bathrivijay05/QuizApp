@@ -23,6 +23,15 @@ function showWelcome() {
 }
 
 function showSubjectSelection() {
+  // Clear all data when returning to subject selection
+  currentState.subject = null;
+  currentState.quizData = null;
+  currentState.year = null;
+  currentState.week = null;
+  currentState.currentQuestionIndex = 0;
+  currentState.userAnswers = {};
+  currentState.checkedQuestions = {};
+
   showScreen("subject-screen");
   renderSubjects();
 }
@@ -32,6 +41,14 @@ function showYearSelection() {
     showSubjectSelection();
     return;
   }
+  // Clear quiz data when returning to year selection
+  currentState.quizData = null;
+  currentState.year = null;
+  currentState.week = null;
+  currentState.currentQuestionIndex = 0;
+  currentState.userAnswers = {};
+  currentState.checkedQuestions = {};
+
   showScreen("year-screen");
   renderYears();
 }
@@ -289,15 +306,31 @@ async function selectYear(yearData) {
 
 async function loadQuizData(folder, file) {
   return new Promise((resolve, reject) => {
+    // Remove any previously loaded quiz data scripts
+    const oldScripts = document.querySelectorAll("script[data-quiz-data]");
+    oldScripts.forEach((script) => script.remove());
+
+    // Clear any existing quizData variable
+    delete window.quizData;
+
+    // Create and load new script with cache-busting
     const script = document.createElement("script");
-    script.src = `${folder}/${file}`;
+    script.src = `${folder}/${file}?t=${Date.now()}`;
+    script.setAttribute("data-quiz-data", "true");
+
     script.onload = () => {
-      if (typeof quizData !== "undefined") {
-        currentState.quizData = quizData;
-        resolve();
-      } else {
-        reject(new Error("Quiz data not found in file"));
-      }
+      // Use a small delay to ensure the script has fully executed
+      setTimeout(() => {
+        if (window.quizData && Array.isArray(window.quizData)) {
+          // Create a deep copy of the data to avoid reference issues
+          currentState.quizData = JSON.parse(JSON.stringify(window.quizData));
+          // Clear the global variable after copying
+          delete window.quizData;
+          resolve();
+        } else {
+          reject(new Error("Quiz data not found in file"));
+        }
+      }, 10);
     };
     script.onerror = () => reject(new Error("Failed to load script"));
     document.head.appendChild(script);

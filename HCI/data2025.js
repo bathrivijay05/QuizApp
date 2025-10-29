@@ -1,4 +1,4 @@
-const quizData = [
+window.quizData = [
   {
     assignment: "Assignment 1",
     week: 1,

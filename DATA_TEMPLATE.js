@@ -13,7 +13,7 @@
  * - For images: provide URL or use null
  */
 
-const quizData = [
+window.quizData = [
   // Week 1
   {
     assignment: "Assignment 1",
