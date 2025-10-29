@@ -1,279 +1,498 @@
-// app.js (Updated: Free Navigation retained, Shuffling removed)
-
-let currentQuestions = [];
-let currentQuestionIndex = 0;
-let score = 0;
-let quizActive = false;
-let quizState = []; // Stores state: { selectedIds: [], isAnswered: false, isCorrect: false }
-
-// NOTE: The shuffleArray function is kept here but is no longer used in loadQuestion or startQuiz.
-const shuffleArray = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array; // This function is now unused in the main flow.
+// Global state
+let currentState = {
+  subject: null,
+  year: null,
+  week: null,
+  quizData: null,
+  currentQuestionIndex: 0,
+  userAnswers: {},
+  checkedQuestions: {},
 };
 
-// Assuming 'quizData' is loaded from data.js and contains ALL assignments/questions
-const flattenedData = quizData.flatMap((assignment) =>
-  assignment.questions.map((q) => ({
-    ...q,
-    week: assignment.week,
-  }))
-);
-
-// --- SCREEN MANAGEMENT ---
-const showScreen = (id) => {
+// Screen navigation functions
+function showScreen(screenId) {
   document.querySelectorAll(".screen").forEach((screen) => {
     screen.classList.remove("active");
   });
-  document.getElementById(id).classList.add("active");
-};
+  document.getElementById(screenId).classList.add("active");
+}
 
-const generateWeekButtons = () => {
-  const weekContainer = document.getElementById("week-selection");
-  // Ensure all weeks from all years are covered
-  const allAssignments = quizData.flatMap((year) => year);
-  const uniqueWeeks = [...new Set(allAssignments.map((a) => a.week))].sort(
-    (a, b) => a - b
-  );
+function showWelcome() {
+  showScreen("welcome-screen");
+  resetState();
+}
 
-  uniqueWeeks.forEach((week) => {
-    const button = document.createElement("button");
-    button.textContent = `Week ${week}`;
-    button.onclick = () => startQuiz(week);
-    weekContainer.appendChild(button);
-  });
-};
+function showSubjectSelection() {
+  showScreen("subject-screen");
+  renderSubjects();
+}
 
-// --- QUIZ FLOW ---
-
-const startQuiz = (mode) => {
-  // Determine the set of questions
-  let selectedQuestions;
-  if (mode === "full") {
-    // Use all questions, but DO NOT shuffle the question order itself
-    selectedQuestions = [...flattenedData];
-  } else {
-    // Filter questions by selected week, and DO NOT shuffle
-    selectedQuestions = flattenedData.filter((q) => q.week === mode);
-  }
-
-  // Sort the questions by original ID to maintain a stable, non-shuffled sequence
-  // This provides a stable, navigable list based on question ID.
-  selectedQuestions.sort((a, b) => a.id.localeCompare(b.id));
-
-  currentQuestions = selectedQuestions;
-
-  if (currentQuestions.length === 0) {
-    alert(`No questions found for the selected mode.`);
+function showYearSelection() {
+  if (!currentState.subject) {
+    showSubjectSelection();
     return;
   }
+  showScreen("year-screen");
+  renderYears();
+}
 
-  score = 0;
-  currentQuestionIndex = 0;
-  quizActive = true;
+function showWeekSelection() {
+  if (!currentState.year || !currentState.quizData) {
+    showYearSelection();
+    return;
+  }
+  showScreen("week-screen");
+  renderWeeks();
+}
 
-  // Initialize quiz state: an empty state for each question
-  quizState = currentQuestions.map((q) => ({
-    selectedIds: [],
-    isAnswered: false,
-    isCorrect: false,
-    // The original order is used, no need for shuffledOptions state
-    originalOptions: [...q.options],
-  }));
-
+function showQuiz() {
   showScreen("quiz-screen");
-  loadQuestion();
-};
+  document.getElementById("results-container").classList.add("hidden");
+  renderQuestion();
+  updateNavigationButtons();
+}
 
-// Function to navigate to any question index
-const goToQuestion = (index) => {
-  if (index >= 0 && index < currentQuestions.length) {
-    currentQuestionIndex = index;
-    loadQuestion();
-  }
-};
+// Render functions
+function renderSubjects() {
+  const subjectList = document.getElementById("subject-list");
+  subjectList.innerHTML = "";
 
-const nextQuestion = () => {
-  goToQuestion(currentQuestionIndex + 1);
-};
+  appConfig.subjects.forEach((subject) => {
+    const hasYears = subject.years.length > 0;
+    const card = document.createElement("button");
+    card.className = "card";
+    card.innerHTML = `
+            <div class="icon">${subject.icon}</div>
+            <div class="title">${subject.shortName}</div>
+            <div class="subtitle">${subject.name}</div>
+        `;
 
-const prevQuestion = () => {
-  goToQuestion(currentQuestionIndex - 1);
-};
-
-const loadQuestion = () => {
-  const q = currentQuestions[currentQuestionIndex];
-  const qState = quizState[currentQuestionIndex];
-  const isAnswered = qState.isAnswered;
-
-  // 1. Reset Controls and Feedback
-  document.getElementById("feedback-container").style.display = "none";
-  document.getElementById("solution-text").textContent = "";
-  document.getElementById("prev-btn").disabled = currentQuestionIndex === 0;
-  document.getElementById("next-btn").disabled =
-    currentQuestionIndex === currentQuestions.length - 1;
-
-  // Disable Submit button until a new selection is made on an unanswered question
-  document.getElementById("submit-btn").disabled = isAnswered;
-
-  // 2. Update Header
-  document.getElementById("question-header").textContent = `Week ${
-    q.week
-  } - Question ${currentQuestionIndex + 1} of ${currentQuestions.length}`;
-
-  // 3. Load Question Content (Text and Image)
-  document.getElementById("question-text").textContent = q.question_text;
-  const qImage = document.getElementById("question-image");
-  if (q.image_context) {
-    qImage.src = q.image_context;
-    qImage.style.display = "block";
-  } else {
-    qImage.style.display = "none";
-    qImage.src = "";
-  }
-
-  // 4. Load Options in ORIGINAL ORDER
-  const optionsContainer = document.getElementById("options-container");
-  optionsContainer.innerHTML = "";
-
-  // Use the original options array stored in the state
-  const originalOptions = qState.originalOptions;
-
-  const isMultiSelect = q.type === "Multi-Select MCQ";
-
-  originalOptions.forEach((option) => {
-    const item = document.createElement("div");
-    item.className = "option-item";
-
-    const inputType = isMultiSelect ? "checkbox" : "radio";
-    const input = document.createElement("input");
-    input.type = inputType;
-    input.name = "quiz-option";
-    input.value = option.id;
-
-    // Check if this option was previously selected by the user
-    input.checked = qState.selectedIds.includes(option.id);
-
-    // Lock options if already answered
-    input.disabled = isAnswered;
-
-    // Enable submission button only if user changes selection/makes a selection
-    input.onchange = () => {
-      document.getElementById("submit-btn").disabled = false;
-    };
-
-    const label = document.createElement("label");
-    label.textContent = option.text;
-
-    if (option.image) {
-      const optionImage = document.createElement("img");
-      optionImage.src = option.image;
-      optionImage.alt = "Option image";
-      label.prepend(optionImage);
+    if (hasYears) {
+      card.onclick = () => selectSubject(subject);
+    } else {
+      card.style.opacity = "0.5";
+      card.style.cursor = "not-allowed";
+      card.onclick = () => {
+        alert(`${subject.name} content will be available soon!`);
+      };
     }
 
-    // Apply visual feedback if answered
-    if (isAnswered) {
-      const isCorrectOption = q.correct_answers.includes(option.id);
-      const isSelected = qState.selectedIds.includes(option.id);
+    subjectList.appendChild(card);
+  });
+}
 
-      if (isCorrectOption) {
-        label.classList.add("correct-option");
-      } else if (isSelected && !isCorrectOption) {
-        label.classList.add("incorrect-selection");
+function renderYears() {
+  const yearList = document.getElementById("year-list");
+  const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
+
+  document.getElementById(
+    "year-screen-title"
+  ).textContent = `Select Year - ${subject.shortName}`;
+  yearList.innerHTML = "";
+
+  subject.years.forEach((yearData) => {
+    const card = document.createElement("button");
+    card.className = "card";
+    card.innerHTML = `
+            <div class="icon">📅</div>
+            <div class="title">${yearData.year}</div>
+        `;
+    card.onclick = () => selectYear(yearData);
+    yearList.appendChild(card);
+  });
+}
+
+function renderWeeks() {
+  const weekList = document.getElementById("week-list");
+  const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
+
+  document.getElementById(
+    "week-screen-title"
+  ).textContent = `${subject.shortName} ${currentState.year} - Select Assignment`;
+  weekList.innerHTML = "";
+
+  if (currentState.quizData && currentState.quizData.length > 0) {
+    currentState.quizData.forEach((assignment) => {
+      const card = document.createElement("button");
+      card.className = "card";
+      card.innerHTML = `
+                <div class="icon">📝</div>
+                <div class="title">Week ${assignment.week}</div>
+                <div class="subtitle">${assignment.assignment}</div>
+                <div class="subtitle">${assignment.questions.length} Questions</div>
+            `;
+      card.onclick = () => startWeek(assignment.week);
+      weekList.appendChild(card);
+    });
+  } else {
+    weekList.innerHTML =
+      '<p style="text-align: center; color: #666;">No assignments available.</p>';
+  }
+}
+
+function renderQuestion() {
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+  if (!assignment || !assignment.questions) return;
+
+  const question = assignment.questions[currentState.currentQuestionIndex];
+  if (!question) return;
+
+  // Update header
+  const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
+  document.getElementById(
+    "quiz-title"
+  ).textContent = `${subject.shortName} ${currentState.year} - ${assignment.assignment}`;
+  document.getElementById("current-question-num").textContent =
+    currentState.currentQuestionIndex + 1;
+  document.getElementById("total-questions").textContent =
+    assignment.questions.length;
+
+  // Update question type
+  document.getElementById("question-type").textContent =
+    question.type || "Single Select";
+
+  // Update question text
+  document.getElementById("question-text").textContent = question.question_text;
+
+  // Update question image if exists
+  const questionImageDiv = document.getElementById("question-image");
+  if (question.image_context) {
+    questionImageDiv.innerHTML = `<img src="${question.image_context}" alt="Question context">`;
+  } else {
+    questionImageDiv.innerHTML = "";
+  }
+
+  // Render options
+  renderOptions(question);
+
+  // Render pagination
+  renderPagination(assignment.questions.length);
+
+  // Show/hide feedback
+  const feedbackContainer = document.getElementById("feedback-container");
+  if (currentState.checkedQuestions[question.id]) {
+    showFeedback(question);
+  } else {
+    feedbackContainer.classList.remove("show");
+  }
+
+  // Update check button
+  updateCheckButton(question);
+}
+
+function renderOptions(question) {
+  const container = document.getElementById("options-container");
+  container.innerHTML = "";
+
+  const isMultiSelect = question.type && question.type.includes("Multi");
+  const isChecked = currentState.checkedQuestions[question.id];
+  const userAnswer = currentState.userAnswers[question.id] || [];
+
+  question.options.forEach((option) => {
+    const optionDiv = document.createElement("div");
+    optionDiv.className = "option";
+
+    if (userAnswer.includes(option.id)) {
+      optionDiv.classList.add("selected");
+    }
+
+    if (isChecked) {
+      optionDiv.classList.add("disabled");
+      if (question.correct_answers.includes(option.id)) {
+        optionDiv.classList.add("correct");
+      } else if (userAnswer.includes(option.id)) {
+        optionDiv.classList.add("incorrect");
       }
     }
 
-    item.appendChild(input);
-    item.appendChild(label);
-    optionsContainer.appendChild(item);
-  });
+    const checkboxHtml = isMultiSelect
+      ? '<div class="option-checkbox"></div>'
+      : '<div class="option-radio"></div>';
 
-  // 5. Display Answered Feedback
-  if (isAnswered) {
-    // Display immediate feedback for answered questions
-    document.getElementById("feedback-container").style.display = "block";
-    const feedbackText = document.getElementById("feedback-text");
-    feedbackText.textContent = qState.isCorrect
-      ? "✅ Correct! (Reviewed)"
-      : "❌ Incorrect. (Reviewed)";
-    feedbackText.className = qState.isCorrect ? "correct" : "incorrect";
-    document.getElementById(
-      "solution-text"
-    ).textContent = `Correct Answers: ${q.correct_answers.join(", ")}`;
+    const imageHtml = option.image
+      ? `<div class="option-image"><img src="${option.image}" alt="Option"></div>`
+      : "";
+
+    optionDiv.innerHTML = `
+            ${checkboxHtml}
+            <div class="option-content">
+                <div class="option-text">${option.text}</div>
+                ${imageHtml}
+            </div>
+        `;
+
+    if (!isChecked) {
+      optionDiv.onclick = () =>
+        selectOption(question, option.id, isMultiSelect);
+    }
+
+    container.appendChild(optionDiv);
+  });
+}
+
+function renderPagination(totalQuestions) {
+  const pagination = document.getElementById("pagination");
+  pagination.innerHTML = "";
+
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+
+  for (let i = 0; i < totalQuestions; i++) {
+    const btn = document.createElement("button");
+    btn.className = "page-btn";
+    btn.textContent = i + 1;
+
+    if (i === currentState.currentQuestionIndex) {
+      btn.classList.add("active");
+    }
+
+    const question = assignment.questions[i];
+    if (currentState.userAnswers[question.id]) {
+      btn.classList.add("answered");
+    }
+
+    if (currentState.checkedQuestions[question.id]) {
+      const isCorrect = checkIfAnswerCorrect(
+        question,
+        currentState.userAnswers[question.id]
+      );
+      btn.classList.add(isCorrect ? "correct" : "incorrect");
+    }
+
+    btn.onclick = () => jumpToQuestion(i);
+    pagination.appendChild(btn);
+  }
+}
+
+// Selection functions
+function selectSubject(subject) {
+  currentState.subject = subject.id;
+  showYearSelection();
+}
+
+async function selectYear(yearData) {
+  currentState.year = yearData.year;
+  const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
+
+  try {
+    // Load the quiz data dynamically
+    await loadQuizData(subject.folder, yearData.file);
+    showWeekSelection();
+  } catch (error) {
+    console.error("Error loading quiz data:", error);
+    alert("Failed to load quiz data. Please try again.");
+  }
+}
+
+async function loadQuizData(folder, file) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = `${folder}/${file}`;
+    script.onload = () => {
+      if (typeof quizData !== "undefined") {
+        currentState.quizData = quizData;
+        resolve();
+      } else {
+        reject(new Error("Quiz data not found in file"));
+      }
+    };
+    script.onerror = () => reject(new Error("Failed to load script"));
+    document.head.appendChild(script);
+  });
+}
+
+function startWeek(week) {
+  currentState.week = week;
+  currentState.currentQuestionIndex = 0;
+  currentState.userAnswers = {};
+  currentState.checkedQuestions = {};
+  showQuiz();
+}
+
+// Answer handling
+function selectOption(question, optionId, isMultiSelect) {
+  if (!currentState.userAnswers[question.id]) {
+    currentState.userAnswers[question.id] = [];
   }
 
-  updateQuizNavigationStatus();
-};
-
-const submitAnswer = () => {
-  const q = currentQuestions[currentQuestionIndex];
-  const qState = quizState[currentQuestionIndex];
-  const options = document.querySelectorAll("#options-container input");
-
-  // 1. Collect user selections
-  const selectedIds = Array.from(options)
-    .filter((input) => input.checked)
-    .map((input) => input.value);
-
-  // 2. Check correctness
-  const correctIds = q.correct_answers;
-  const isCorrect =
-    correctIds.length === selectedIds.length &&
-    correctIds.every((id) => selectedIds.includes(id));
-
-  // 3. Update Quiz State (Crucial for free navigation)
-  qState.selectedIds = selectedIds;
-  qState.isAnswered = true;
-  qState.isCorrect = isCorrect;
-
-  // Recalculate score
-  score = quizState.filter((s) => s.isCorrect).length;
-
-  // 4. Provide Immediate Feedback and Highlight
-  loadQuestion(); // Re-render to display locked options and colors
-
-  // 5. Update UI Controls/Status
-  document.getElementById("submit-btn").disabled = true;
-  updateQuizNavigationStatus();
-};
-
-const showResults = () => {
-  document.getElementById(
-    "final-score"
-  ).textContent = `Your Score: ${score}/${currentQuestions.length}`;
-  showScreen("results-screen");
-};
-
-// Function to render status buttons for quick jumps
-const updateQuizNavigationStatus = () => {
-  const navContainer = document.getElementById("question-nav-status");
-  navContainer.innerHTML = "";
-
-  quizState.forEach((qState, index) => {
-    const navButton = document.createElement("button");
-    navButton.textContent = `${index + 1}`;
-    navButton.onclick = () => goToQuestion(index);
-
-    // Add visual cues based on state
-    if (qState.isAnswered) {
-      navButton.classList.add(
-        qState.isCorrect ? "nav-correct" : "nav-incorrect"
-      );
+  if (isMultiSelect) {
+    const index = currentState.userAnswers[question.id].indexOf(optionId);
+    if (index > -1) {
+      currentState.userAnswers[question.id].splice(index, 1);
+    } else {
+      currentState.userAnswers[question.id].push(optionId);
     }
-    if (index === currentQuestionIndex) {
-      navButton.classList.add("nav-current");
-    }
+  } else {
+    currentState.userAnswers[question.id] = [optionId];
+  }
 
-    navContainer.appendChild(navButton);
+  renderQuestion();
+}
+
+function checkAnswer() {
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+  const question = assignment.questions[currentState.currentQuestionIndex];
+
+  if (
+    !currentState.userAnswers[question.id] ||
+    currentState.userAnswers[question.id].length === 0
+  ) {
+    alert("Please select an answer before checking!");
+    return;
+  }
+
+  currentState.checkedQuestions[question.id] = true;
+  renderQuestion();
+  updateNavigationButtons();
+}
+
+function checkIfAnswerCorrect(question, userAnswer) {
+  if (!userAnswer || userAnswer.length === 0) return false;
+
+  const correctAnswers = question.correct_answers.sort();
+  const sortedUserAnswer = [...userAnswer].sort();
+
+  return JSON.stringify(correctAnswers) === JSON.stringify(sortedUserAnswer);
+}
+
+function showFeedback(question) {
+  const feedbackContainer = document.getElementById("feedback-container");
+  const userAnswer = currentState.userAnswers[question.id] || [];
+  const isCorrect = checkIfAnswerCorrect(question, userAnswer);
+
+  feedbackContainer.className =
+    "feedback-container show " + (isCorrect ? "correct" : "incorrect");
+
+  if (isCorrect) {
+    feedbackContainer.innerHTML = "<strong>✓ Correct!</strong> Well done!";
+  } else {
+    const correctOptions = question.options
+      .filter((opt) => question.correct_answers.includes(opt.id))
+      .map((opt) => opt.text)
+      .join(", ");
+    feedbackContainer.innerHTML = `
+            <strong>✗ Incorrect</strong>
+            <div>Correct answer: ${correctOptions}</div>
+        `;
+  }
+}
+
+function updateCheckButton(question) {
+  const checkBtn = document.getElementById("check-btn");
+  const isChecked = currentState.checkedQuestions[question.id];
+
+  if (isChecked) {
+    checkBtn.disabled = true;
+    checkBtn.textContent = "Checked ✓";
+  } else {
+    checkBtn.disabled = false;
+    checkBtn.textContent = "Check Answer";
+  }
+}
+
+// Navigation
+function navigateQuestion(direction) {
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+  const newIndex = currentState.currentQuestionIndex + direction;
+
+  if (newIndex >= 0 && newIndex < assignment.questions.length) {
+    currentState.currentQuestionIndex = newIndex;
+    renderQuestion();
+    updateNavigationButtons();
+  } else if (newIndex >= assignment.questions.length) {
+    showResults();
+  }
+}
+
+function jumpToQuestion(index) {
+  currentState.currentQuestionIndex = index;
+  renderQuestion();
+  updateNavigationButtons();
+}
+
+function updateNavigationButtons() {
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+  prevBtn.disabled = currentState.currentQuestionIndex === 0;
+
+  if (currentState.currentQuestionIndex === assignment.questions.length - 1) {
+    nextBtn.textContent = "Finish Quiz";
+  } else {
+    nextBtn.textContent = "Next →";
+  }
+}
+
+function exitQuiz() {
+  if (
+    confirm(
+      "Are you sure you want to exit the quiz? Your progress will be saved."
+    )
+  ) {
+    showWeekSelection();
+  }
+}
+
+// Results
+function showResults() {
+  const assignment = currentState.quizData.find(
+    (a) => a.week === currentState.week
+  );
+  let correctCount = 0;
+
+  assignment.questions.forEach((question) => {
+    if (checkIfAnswerCorrect(question, currentState.userAnswers[question.id])) {
+      correctCount++;
+    }
   });
-};
 
-// Initialize the app when the window loads
-window.onload = () => {
-  generateWeekButtons();
-  showScreen("start-screen");
-};
+  const totalCount = assignment.questions.length;
+  const percentage = Math.round((correctCount / totalCount) * 100);
+
+  document.getElementById("score-percentage").textContent = percentage + "%";
+  document.getElementById("correct-count").textContent = correctCount;
+  document.getElementById("total-count").textContent = totalCount;
+
+  document.getElementById("results-container").classList.remove("hidden");
+
+  // Scroll to results
+  document
+    .getElementById("results-container")
+    .scrollIntoView({ behavior: "smooth" });
+}
+
+function restartQuiz() {
+  currentState.currentQuestionIndex = 0;
+  currentState.userAnswers = {};
+  currentState.checkedQuestions = {};
+  document.getElementById("results-container").classList.add("hidden");
+  showQuiz();
+}
+
+// Utility functions
+function resetState() {
+  currentState = {
+    subject: null,
+    year: null,
+    week: null,
+    quizData: null,
+    currentQuestionIndex: 0,
+    userAnswers: {},
+    checkedQuestions: {},
+  };
+}
+
+// Initialize app
+document.addEventListener("DOMContentLoaded", () => {
+  showWelcome();
+});
