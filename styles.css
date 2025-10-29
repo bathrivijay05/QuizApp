@@ -12,6 +12,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -73,6 +75,11 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   outline: none;
+  min-height: 44px; /* Minimum touch target size */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn:hover {
@@ -134,7 +141,7 @@ body {
 
 .header h2 {
   color: #333;
-  font-size: 1.8em;
+  font-size: 1.5em;
   flex: 1;
 }
 
@@ -162,11 +169,18 @@ body {
   border: none;
   font-size: 1.1em;
   font-weight: 600;
+  min-height: 120px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+.card:active {
+  transform: translateY(-2px);
 }
 
 .card .icon {
@@ -270,11 +284,18 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  min-height: 60px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .option:hover {
   background: #e9ecef;
   transform: translateX(5px);
+}
+
+.option:active {
+  transform: translateX(2px);
 }
 
 .option.selected {
@@ -540,64 +561,256 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .container {
+  body {
     padding: 10px;
   }
 
+  .container {
+    padding: 0;
+  }
+
   .screen {
-    padding: 20px;
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .welcome-content {
+    padding: 40px 10px;
   }
 
   .welcome-content h1 {
     font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+
+  .screen-header {
+    margin-bottom: 20px;
+  }
+
+  .screen-header h2 {
+    font-size: 1.5em;
   }
 
   .card-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card .icon {
+    font-size: 2em;
+    margin-bottom: 8px;
+  }
+
+  .card .title {
+    font-size: 1.2em;
+  }
+
+  .card .subtitle {
+    font-size: 0.9em;
   }
 
   .quiz-header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 15px;
+    gap: 10px;
+    padding: 15px;
   }
 
   .quiz-info {
     align-items: flex-start;
   }
 
+  #quiz-title {
+    font-size: 1em;
+  }
+
+  .question-counter {
+    font-size: 0.85em;
+  }
+
+  .quiz-content {
+    max-height: calc(100vh - 220px);
+    padding-right: 5px;
+  }
+
+  .question-type {
+    padding: 4px 12px;
+    font-size: 0.75em;
+  }
+
   .question-text {
-    font-size: 1.1em;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .option {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+
+  .option-checkbox,
+  .option-radio {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  .option-text {
+    font-size: 0.95em;
+  }
+
+  .feedback-container {
+    padding: 12px 15px;
+    font-size: 0.9em;
   }
 
   .quiz-actions {
     flex-direction: column;
+    gap: 10px;
+    padding: 15px;
   }
 
   .quiz-actions .btn {
     width: 100%;
+    padding: 12px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+
+  .pagination {
+    gap: 6px;
+    padding: 15px;
   }
 
   .page-btn {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    font-size: 0.9em;
   }
 
   .score-circle {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 
   .score-circle span {
     font-size: 2em;
   }
 
+  .score-text {
+    font-size: 1.1em;
+  }
+
   .results-actions {
     flex-direction: column;
+    gap: 10px;
   }
 
   .results-actions .btn {
     width: 100%;
+  }
+
+  .results-container {
+    padding: 20px 15px;
+  }
+}
+
+/* Extra small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .screen {
+    padding: 15px 10px;
+    border-radius: 10px;
+  }
+
+  .welcome-content {
+    padding: 30px 5px;
+  }
+
+  .welcome-content h1 {
+    font-size: 1.75em;
+  }
+
+  .subtitle {
+    font-size: 0.95em;
+  }
+
+  .screen-header h2 {
+    font-size: 1.3em;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card .icon {
+    font-size: 1.8em;
+  }
+
+  .card .title {
+    font-size: 1.1em;
+  }
+
+  .quiz-header {
+    padding: 12px 10px;
+  }
+
+  #quiz-title {
+    font-size: 0.95em;
+  }
+
+  .question-text {
+    font-size: 0.95em;
+  }
+
+  .option {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .option-checkbox,
+  .option-radio {
+    width: 18px;
+    height: 18px;
+  }
+
+  .option-text {
+    font-size: 0.9em;
+  }
+
+  .quiz-actions,
+  .pagination {
+    padding: 12px 10px;
+  }
+
+  .page-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85em;
+  }
+
+  .score-circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .score-circle span {
+    font-size: 1.75em;
   }
 }
