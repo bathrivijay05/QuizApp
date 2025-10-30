@@ -813,4 +813,8 @@ body {
   .score-circle span {
     font-size: 1.75em;
   }
+
+  .btn.btn-primary.btn-large {
+    margin-top: 8px;
+  }
 }
