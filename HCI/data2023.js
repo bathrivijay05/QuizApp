@@ -93,7 +93,7 @@ window.quizData = [
       {
         id: "1.6_2023_HCI",
         question_text:
-          "'Identify objectives' and 'customer evaluation and planning' is in the quadrant of the spiral model respectively.",
+          "'Identify objectives' and 'customer evaluation and planning' is in the ____ and ____ quadrant of the spiral model respectively.",
         image_context: null,
         options: [
           { id: "a", text: "First, Fourth", image: null },
@@ -303,7 +303,7 @@ window.quizData = [
       {
         id: "2.6_2023_CG",
         question_text:
-          "is a frequently used class of objects in computer graphics that are described using second-degree equations (quadratic equations)? (Note: Context suggests Computer Graphics subject)",
+          "____ is a frequently used class of objects in computer graphics that are described using second-degree equations (quadratic equations)? (Note: Context suggests Computer Graphics subject)",
         image_context: null,
         options: [
           { id: "a", text: "Quadric Surfaces", image: null },
@@ -401,7 +401,7 @@ window.quizData = [
       },
       {
         id: "3.3_2023_HCI",
-        question_text: "Shneiderman proposed golden rules.",
+        question_text: "Shneiderman proposed ____ golden rules.",
         image_context: null,
         options: [
           { id: "a", text: "Five", image: null },
@@ -466,7 +466,7 @@ window.quizData = [
       {
         id: "3.7_2023_HCI",
         question_text:
-          "In user-centered design, we have two concerns: Interface design and",
+          "In user-centered design, we have two concerns: Interface design and ____",
         image_context: null,
         options: [
           { id: "a", text: "Machine design", image: null },
@@ -479,7 +479,7 @@ window.quizData = [
       {
         id: "3.8_2023_HCI",
         question_text:
-          "Code design can be expressed in natural languages, semi-formal languages, and",
+          "Code design can be expressed in natural languages, semi-formal languages, and ____",
         image_context: null,
         options: [
           { id: "a", text: "Informal languages", image: null },
@@ -492,7 +492,7 @@ window.quizData = [
       {
         id: "3.9_2023_HCI",
         question_text:
-          '"The interface should not force users to remember too many things" - this statement falls under "" one of the golden rules proposed by Shneiderman.',
+          '"The interface should not force users to remember too many things" - this statement falls under "____", one of the golden rules proposed by Shneiderman.',
         image_context: null,
         options: [
           { id: "a", text: "Strive for consistency", image: null },
@@ -618,7 +618,7 @@ window.quizData = [
       },
       {
         id: "4.7_2023_HCI",
-        question_text: "Paper mock-ups are the example of prototype.",
+        question_text: "Paper mock-ups are the example of ____ prototype.",
         image_context: null,
         options: [
           { id: "a", text: "Low fidelity", image: null },
@@ -631,7 +631,7 @@ window.quizData = [
       {
         id: "4.8_2023_HCI",
         question_text:
-          'In this technique, a human subject believes to interact with an autonomous computer. In reality, however, the computer is operated by an "unseen" human being. This technique is called approach.',
+          'In this technique, a human subject believes to interact with an autonomous computer. In reality, however, the computer is operated by an "unseen" human being. This technique is called ____ approach.',
         image_context: null,
         options: [
           { id: "a", text: "Medium fidelity", image: null },
@@ -658,7 +658,7 @@ window.quizData = [
       {
         id: "4.10_2023_HCI",
         question_text:
-          "Nielsen, 1994 proposed heuristics for expert evaluation",
+          "Nielsen, 1994 proposed ____ heuristics for expert evaluation",
         image_context: null,
         options: [
           { id: "a", text: "5", image: null },
@@ -794,7 +794,7 @@ window.quizData = [
       {
         id: "5.10_2023_HCI",
         question_text:
-          "In expert evaluation, the evaluation team should have at least members.",
+          "In expert evaluation, the evaluation team should have at least ____ members.",
         image_context: null,
         options: [
           { id: "a", text: "3-5", image: null },
@@ -826,7 +826,7 @@ window.quizData = [
       {
         id: "6.2_2023_HCI",
         question_text:
-          "When all functions within a module perform similar operations, it demonstrates cohesion.",
+          "When all functions within a module perform similar operations, it demonstrates ____ cohesion.",
         image_context: null,
         options: [
           { id: "a", text: "Logical", image: null },
@@ -839,7 +839,7 @@ window.quizData = [
       },
       {
         id: "6.3_2023_HCI",
-        question_text: "If two modules share code, it indicates coupling.",
+        question_text: "If two modules share code, it indicates ____ coupling.",
         image_context: null,
         options: [
           { id: "a", text: "Data", image: null },
@@ -852,7 +852,7 @@ window.quizData = [
       {
         id: "6.4_2023_HCI",
         question_text:
-          "In addition to function-oriented, the other basic design approach is oriented.",
+          "In addition to function-oriented, the other basic design approach is ____ oriented.",
         image_context: null,
         options: [
           { id: "a", text: "Logic", image: null },
@@ -866,7 +866,7 @@ window.quizData = [
       {
         id: "6.5_2023_HCI",
         question_text:
-          "UML is primarily based on a(n) oriented design approach.",
+          "UML is primarily based on a(n) ____ oriented design approach.",
         image_context: null,
         options: [
           { id: "a", text: "Logic", image: null },
@@ -879,7 +879,7 @@ window.quizData = [
       {
         id: "6.6_2023_HCI",
         question_text:
-          "DFD focuses on the flow of through a process or system.",
+          "DFD focuses on the flow of ____ through a process or system.",
         image_context: null,
         options: [
           { id: "a", text: "RAM", image: null },
@@ -893,7 +893,7 @@ window.quizData = [
       {
         id: "6.7_2023_HCI",
         question_text:
-          "The three basic components of an ER diagram are Entity, Attribute, and",
+          "The three basic components of an ER diagram are Entity, Attribute, and ____",
         image_context: null,
         options: [
           { id: "a", text: "Object", image: null },
@@ -916,7 +916,7 @@ window.quizData = [
       {
         id: "6.9_2023_HCI",
         question_text:
-          "What are the four types of relationships in an ER diagram: one-to-one, one-to-many, many-to-one, and ?",
+          "What are the four types of relationships in an ER diagram: one-to-one, one-to-many, many-to-one, and ____?",
         image_context: null,
         options: [
           { id: "a", text: "Many-to-binary", image: null },
@@ -1042,7 +1042,8 @@ window.quizData = [
       },
       {
         id: "7.8_2023_HCI",
-        question_text: "In UML diagram, structural view consists of and",
+        question_text:
+          "In UML diagram, structural view consists of ____ and ____",
         image_context: null,
         options: [
           { id: "a", text: "sequence diagram", image: null },
@@ -1055,7 +1056,7 @@ window.quizData = [
       {
         id: "7.9_2023_HCI",
         question_text:
-          "In object oriented design, operations is also called . Which is/are of the following is true.",
+          "In object oriented design, operations is also called ____. Which is/are of the following is true.",
         image_context: null,
         options: [
           { id: "a", text: "method", image: null },
@@ -1247,7 +1248,8 @@ window.quizData = [
       },
       {
         id: "8.8_2023_HCI",
-        question_text: "Global variable names may always start with letter.",
+        question_text:
+          "Global variable names may always start with ____ letter.",
         image_context: null,
         options: [
           { id: "a", text: "Small letter", image: null },
@@ -1510,7 +1512,7 @@ window.quizData = [
       },
       {
         id: "10.7_2023_HCI",
-        question_text: "Volume testing tests system performance for input",
+        question_text: "Volume testing tests system performance for ____ input",
         image_context: null,
         options: [
           { id: "a", text: "Small", image: null },
@@ -1521,7 +1523,7 @@ window.quizData = [
       },
       {
         id: "10.8_2023_HCI",
-        question_text: "In a CFG, a node is created for each numbered",
+        question_text: "In a CFG, a node is created for each numbered ____",
         image_context: null,
         options: [
           { id: "a", text: "Line number", image: null },
@@ -1533,7 +1535,7 @@ window.quizData = [
       },
       {
         id: "10.9_2023_HCI",
-        question_text: "There are stages of empirical research.",
+        question_text: "There are ____ stages of empirical research.",
         image_context: null,
         options: [
           { id: "a", text: "Three", image: null },
@@ -1623,7 +1625,7 @@ window.quizData = [
       {
         id: "11.5_2023_HCI",
         question_text:
-          "The extent to which the observations made for a research question depends on the test condition is known as the of the question",
+          "The extent to which the observations made for a research question depends on the test condition is known as the ____ of the question",
         image_context: null,
         options: [
           { id: "a", text: "Internal validity", image: null },
@@ -1670,7 +1672,7 @@ window.quizData = [
       {
         id: "11.8_2023_HCI",
         question_text:
-          "To draw reliable conclusions from empirical data, we should use between and participants.",
+          "To draw reliable conclusions from empirical data, we should use between ____ participants.",
         image_context: null,
         options: [
           { id: "a", text: "3 and 5", image: null },
@@ -1725,7 +1727,7 @@ window.quizData = [
       {
         id: "12.1_2023_HCI",
         question_text:
-          "Empirical study has broadly four stages: Identification of research questions, Determination of variables, Design of experiment and",
+          "Empirical study has broadly four stages: Identification of research questions, Determination of variables, Design of experiment and ____",
         image_context: null,
         options: [
           { id: "a", text: "Provide feedback to the users", image: null },
@@ -1743,7 +1745,7 @@ window.quizData = [
       {
         id: "12.2_2023_HCI",
         question_text:
-          "With the significance test, we try to the null hypothesis",
+          "With the significance test, we try to ____ the null hypothesis",
         image_context: null,
         options: [
           { id: "a", text: "Accept", image: null },
@@ -1755,7 +1757,7 @@ window.quizData = [
       {
         id: "12.3_2023_HCI",
         question_text:
-          'If we perform significance test on data and find the statistic is significant with $p<0.05$, we can say with confidence that the data is due to the "treatment" and not by chance in of the times.',
+          'If we perform significance test on data and find the statistic is significant with $p<0.05$, we can say with confidence that the data is due to the "treatment" and not by chance in ____ of the times.',
         image_context: null,
         options: [
           { id: "a", text: "5%", image: null },
@@ -1779,7 +1781,7 @@ window.quizData = [
       {
         id: "12.5_2023_HCI",
         question_text:
-          "In parametric tests, data should come from a population.",
+          "In parametric tests, data should come from a ____ population.",
         image_context: null,
         options: [
           { id: "a", text: "Uniformly", image: null },
@@ -1790,7 +1792,7 @@ window.quizData = [
       },
       {
         id: "12.6_2023_HCI",
-        question_text: "Chi-square test is a test",
+        question_text: "Chi-square test is a ____ test",
         image_context: null,
         options: [
           { id: "a", text: "Parametric", image: null },
@@ -1835,6 +1837,18 @@ window.quizData = [
         ],
         correct_answers: ["a"],
         type: "True/False",
+      },
+      {
+        id: "12.10_2023_HCI",
+        question_text:
+          "To avoid Type I errors, we typically use a very _______ value of p.",
+        image_context: null,
+        options: [
+          { id: "a", text: "Low", image: null },
+          { id: "b", text: "High", image: null },
+        ],
+        correct_answers: ["a"],
+        type: "Single-Select MCQ",
       },
     ],
   },

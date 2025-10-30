@@ -6,7 +6,7 @@ window.quizData = [
       {
         id: "1.1_2025_HCI",
         question_text:
-          "While we talk about the evaluation phases of the computer, is called the modern age computers.",
+          "While we talk about the evaluation phases of the computer, _______ is called the modern age computers.",
         image_context: null,
         options: [
           { id: "a", text: "1985 onwards", image: null },
@@ -84,7 +84,7 @@ window.quizData = [
       {
         id: "1.6_2025_HCI",
         question_text:
-          "Interactive software development is in nature. (1 point) [lec3]",
+          "Interactive software development is _______ in nature. (1 point) [lec3]",
         image_context: null,
         options: [
           { id: "a", text: "sporadic", image: null },
@@ -126,7 +126,7 @@ window.quizData = [
       {
         id: "1.9_2025_HCI",
         question_text:
-          "'Identify objectives' and 'customer evaluation and planning' is in the and quadrant of the spiral model respectively. (1 point)",
+          "'Identify objectives' and 'customer evaluation and planning' is in the _______ and _______ quadrant of the spiral model respectively. (1 point)",
         image_context: null,
         options: [
           { id: "a", text: "First, Fourth", image: null },
@@ -159,7 +159,7 @@ window.quizData = [
     questions: [
       {
         id: "2.1_2025_HCI",
-        question_text: "Contextual inquiry is also known as",
+        question_text: "Contextual inquiry is also known as _______",
         image_context: null,
         options: [
           { id: "a", text: "Interview", image: null },
@@ -185,7 +185,8 @@ window.quizData = [
       },
       {
         id: "2.3_2025_HCI",
-        question_text: "Contextual inquiry can be done in and passive mode",
+        question_text:
+          "Contextual inquiry can be done in _______ and passive mode",
         image_context: null,
         options: [
           { id: "a", text: "active", image: null },
@@ -197,7 +198,7 @@ window.quizData = [
       },
       {
         id: "2.4_2025_HCI",
-        question_text: "There are stages in contextual inquiry.",
+        question_text: "There are _______ stages in contextual inquiry.",
         image_context: null,
         options: [
           { id: "a", text: "two", image: null },
@@ -224,7 +225,7 @@ window.quizData = [
       },
       {
         id: "2.6_2025_HCI",
-        question_text: "Affinity diagram method consists of steps.",
+        question_text: "Affinity diagram method consists of _______ steps.",
         image_context: null,
         options: [
           { id: "a", text: "Three", image: null },
@@ -237,7 +238,7 @@ window.quizData = [
       },
       {
         id: "2.7_2025_HCI",
-        question_text: "Usability requirements is one type of",
+        question_text: "Usability requirements is one type of _______",
         image_context: null,
         options: [
           { id: "a", text: "Functional Requirement", image: null },
@@ -342,7 +343,7 @@ window.quizData = [
       {
         id: "3.3_2025_HCI",
         question_text:
-          "In user-centered design, we have two concerns: Interface design and",
+          "In user-centered design, we have two concerns: Interface design and _______",
         image_context: null,
         options: [
           { id: "a", text: "Machine design", image: null },
@@ -356,7 +357,7 @@ window.quizData = [
       {
         id: "3.4_2025_HCI",
         question_text:
-          "The design-prototype-evaluate cycle primarily caters to design.",
+          "The design-prototype-evaluate cycle primarily caters to _______ design.",
         image_context: null,
         options: [
           { id: "a", text: "Interface", image: null },
@@ -369,7 +370,7 @@ window.quizData = [
       {
         id: "3.5_2025_HCI",
         question_text:
-          "Code design can be expressed in natural languages, semi-formal languages and",
+          "Code design can be expressed in natural languages, semi-formal languages and _______",
         image_context: null,
         options: [
           { id: "a", text: "Informal languages", image: null },
@@ -381,7 +382,7 @@ window.quizData = [
       },
       {
         id: "3.6_2025_HCI",
-        question_text: "DFD is a",
+        question_text: "DFD is a _______ code design language.",
         image_context: null,
         options: [
           { id: "a", text: "Natural", image: null },
@@ -395,7 +396,7 @@ window.quizData = [
       {
         id: "3.7_2025_HCI",
         question_text:
-          "Shneiderman proposed rules that covers broad aspects of interactive systems.",
+          "Shneiderman proposed _______ rules that covers broad aspects of interactive systems.",
         image_context: null,
         options: [
           { id: "a", text: "Five", image: null },
@@ -409,7 +410,7 @@ window.quizData = [
       {
         id: "3.8_2025_HCI",
         question_text:
-          '"The interface should not force users to remember too many things" - this statement falls under ", one of the golden rules proposed by Shneiderman.',
+          '"The interface should not force users to remember too many things" - this statement falls under "_______", one of the golden rules proposed by Shneiderman.',
         image_context: null,
         options: [
           { id: "a", text: "Strive for consistency", image: null },
@@ -423,7 +424,7 @@ window.quizData = [
       {
         id: "3.9_2025_HCI",
         question_text:
-          "Human interface guidelines for the apple systems are the design guide",
+          "Human interface guidelines for the apple systems are the _______ design guide",
         image_context: null,
         options: [
           { id: "a", text: "Generic", image: null },
@@ -453,7 +454,7 @@ window.quizData = [
       {
         id: "4.1_2025_HCI",
         question_text:
-          "Norman's Model of Interaction represents behavior of a user of interactive systems in terms of a series of",
+          "Norman's Model of Interaction represents behavior of a user of interactive systems in terms of a series of _______",
         image_context: null,
         options: [
           { id: "a", text: "actions", image: null },
@@ -466,11 +467,15 @@ window.quizData = [
       {
         id: "4.2_2025_HCI",
         question_text:
-          "The eight golden rules for interface design were proposed by Ben Shneiderman in in the year (fill in the blank with the correct year in the format yyyy).",
+          "The eight golden rules for interface design were proposed by Ben Shneiderman in in the year _______",
         image_context: null,
-        options: [],
+        options: [
+          { id: "a", text: "1986", image: null },
+          { id: "b", text: "1956", image: null },
+          { id: "c", text: "1988", image: null },
+        ],
         correct_answers: ["1986"],
-        type: "Fill in the Blank",
+        type: "Single-Select MCQ",
       },
       {
         id: "4.3_2025_HCI",
@@ -493,7 +498,7 @@ window.quizData = [
       {
         id: "4.4_2025_HCI",
         question_text:
-          "There are broadly two stages of interaction execution stage and interaction stage.",
+          "There are broadly two stages of interaction execution stage and _______",
         image_context: null,
         options: [
           { id: "a", text: "design", image: null },
@@ -506,7 +511,7 @@ window.quizData = [
       {
         id: "4.5_2025_HCI",
         question_text:
-          "Perceive system state comes under the stage of interaction.",
+          "Perceive system state comes under the _______ stage of interaction.",
         image_context: null,
         options: [
           { id: "a", text: "execution", image: null },
@@ -520,7 +525,7 @@ window.quizData = [
       {
         id: "4.6_2025_HCI",
         question_text:
-          "Actions we specify to translate intentions may not be supported by the interface leading to gap (gulf) between the first three and the last actions in the execution stage- It is called",
+          "Actions we specify to translate intentions may not be supported by the interface leading to gap (gulf) between the first three and the last actions in the execution stage- It is called _______",
         image_context: null,
         options: [
           { id: "a", text: "The gulf of execution", image: null },
@@ -533,7 +538,7 @@ window.quizData = [
       {
         id: "4.7_2025_HCI",
         question_text:
-          "Errors during interaction are explained in terms of slips and mistakes. (Fill in the blank with the other term)",
+          "Errors during interaction are explained in terms of slips and  _______",
         image_context: null,
         options: [
           { id: "a", text: "error", image: null },
@@ -545,7 +550,7 @@ window.quizData = [
       },
       {
         id: "4.8_2025_HCI",
-        question_text: "Paper mock-ups are the example of prototype.",
+        question_text: "Paper mock-ups are the example of _______ prototype.",
         image_context: null,
         options: [
           { id: "a", text: "Low fidelity", image: null },
@@ -558,7 +563,7 @@ window.quizData = [
       {
         id: "4.9_2025_HCI",
         question_text:
-          "In Norman's Model of Interaction the actions represent the activities of the user",
+          "In Norman's Model of Interaction the actions represent the _______ and sensory-motor activities of the user",
         image_context: null,
         options: [
           { id: "a", text: "Cognitive", image: null },
@@ -642,7 +647,7 @@ window.quizData = [
       {
         id: "5.5_2025_HCI",
         question_text:
-          "There are many ways of collecting user feedback in evaluation with self report methods: ask them to choose from a list of system attributes ask direct and open-ended questions.",
+          "There are many ways of collecting user feedback in evaluation with self report methods: _______ ask them to choose from a list of system attributes ask direct and open-ended questions.",
         image_context: null,
         options: [
           { id: "a", text: "Utter the option", image: null },
@@ -665,7 +670,7 @@ window.quizData = [
       {
         id: "5.7_2025_HCI",
         question_text:
-          "It is generally assumed that an SUS score around percent or higher is desirable",
+          "It is generally assumed that an SUS score around _______ percent or higher is desirable",
         image_context: null,
         options: [
           { id: "a", text: "10", image: null },
@@ -692,7 +697,7 @@ window.quizData = [
       {
         id: "5.9_2025_HCI",
         question_text:
-          "Nielsen, 1994 proposed heuristics for expert evaluation",
+          "Nielsen, 1994 proposed _______ heuristics for expert evaluation",
         image_context: null,
         options: [
           { id: "a", text: "5", image: null },
@@ -739,7 +744,7 @@ window.quizData = [
       {
         id: "6.2_2025_HCI",
         question_text:
-          "If all functions perform similar operations it falls under cohesion",
+          "If all functions perform similar operations it falls under _______ cohesion",
         image_context: null,
         options: [
           { id: "a", text: "Logical", image: null },
@@ -752,7 +757,8 @@ window.quizData = [
       },
       {
         id: "6.3_2025_HCI",
-        question_text: "If two modules share code, it falls under coupling.",
+        question_text:
+          "If two modules share code, it falls under _______ coupling.",
         image_context: null,
         options: [
           { id: "a", text: "Data", image: null },
@@ -765,7 +771,7 @@ window.quizData = [
       {
         id: "6.4_2025_HCI",
         question_text:
-          "There are two basic design approaches: function oriented and oriented.",
+          "There are two basic design approaches: function oriented and _______ oriented.",
         image_context: null,
         options: [
           { id: "a", text: "Logic", image: null },
@@ -779,7 +785,7 @@ window.quizData = [
       {
         id: "6.5_2025_HCI",
         question_text:
-          "Basic components of ER diagram are: Entity, and Relationship",
+          "Basic components of ER diagram are: Entity, _______ and Relationship",
         image_context: null,
         options: [
           { id: "a", text: "Object", image: null },
@@ -872,7 +878,7 @@ window.quizData = [
       },
       {
         id: "7.2_2025_HCI",
-        question_text: "A class contains attributes and",
+        question_text: "A class contains attributes and _______",
         image_context: null,
         options: [
           { id: "a", text: "Data", image: null },
@@ -935,7 +941,7 @@ window.quizData = [
       {
         id: "7.7_2025_HCI",
         question_text:
-          'In object oriented design approach, we think of system as a collection of "objects" and their',
+          'In object oriented design approach, we think of system as a collection of "objects" and their _______',
         image_context: null,
         options: [
           { id: "a", text: "function", image: null },
@@ -959,7 +965,7 @@ window.quizData = [
       },
       {
         id: "7.9_2025_HCI",
-        question_text: "UML supports views of a system",
+        question_text: "UML supports _______ views of a system",
         image_context: null,
         options: [
           { id: "a", text: "3", image: null },
@@ -972,7 +978,8 @@ window.quizData = [
       },
       {
         id: "7.10_2025_HCI",
-        question_text: "In UML diagram, structural view consists of and",
+        question_text:
+          "In UML diagram, structural view consists of _______ and _______",
         image_context: null,
         options: [
           { id: "a", text: "sequence diagram", image: null },
@@ -1007,7 +1014,8 @@ window.quizData = [
       },
       {
         id: "8.2_2025_HCI",
-        question_text: "A function should have no longer than lines of code.",
+        question_text:
+          "A function should have no longer than _______ lines of code.",
         image_context: null,
         options: [
           { id: "a", text: "5", image: null },
@@ -1043,7 +1051,7 @@ window.quizData = [
       {
         id: "8.4_2025_HCI",
         question_text:
-          "Two broad categories of code testing methods are review-based method and method.",
+          "Two broad categories of code testing methods are review-based method and _______ method.",
         image_context: null,
         options: [
           { id: "a", text: "Manual", image: null },
@@ -1144,7 +1152,7 @@ window.quizData = [
       {
         id: "9.1_2025_HCI",
         question_text:
-          "Set of all test cases with which a given software is to be tested is known as",
+          "Set of all test cases with which a given software is to be tested is known as _______",
         image_context: null,
         options: [
           { id: "a", text: "Testcase", image: null },
@@ -1180,7 +1188,7 @@ window.quizData = [
       {
         id: "9.4_2025_HCI",
         question_text:
-          "In black box testing the two approaches to design test cases are: Equivalence class partitioning and",
+          "In black box testing the two approaches to design test cases are: Equivalence class partitioning and _______",
         image_context: null,
         options: [
           { id: "a", text: "Structural analysis", image: null },
@@ -1194,7 +1202,7 @@ window.quizData = [
       {
         id: "9.5_2025_HCI",
         question_text:
-          "Testing code with any value(s) of an equivalence class is as good as testing with ALL input values belonging to that class.",
+          "Testing code with any _______ value(s) of an equivalence class is as good as testing with ALL input values belonging to that class.",
         image_context: null,
         options: [
           { id: "a", text: "one", image: null },
@@ -1220,7 +1228,7 @@ window.quizData = [
       },
       {
         id: "9.7_2025_HCI",
-        question_text: "Black box testing is a testing.",
+        question_text: "Black box testing is a _______ testing.",
         image_context: null,
         options: [
           { id: "a", text: "Functional testing", image: null },
@@ -1300,7 +1308,7 @@ window.quizData = [
       {
         id: "10.3_2025_HCI",
         question_text:
-          "In path coverage, test cases should ensure all in the code executed at least once.",
+          "In path coverage, test cases should ensure all _______ in the code executed at least once.",
         image_context: null,
         options: [
           { id: "a", text: "Linearly independent paths", image: null },
@@ -1312,7 +1320,7 @@ window.quizData = [
       {
         id: "10.4_2025_HCI",
         question_text:
-          "Three main stages of system testing is alpha testing, beta testing and",
+          "Three main stages of system testing is alpha testing, beta testing and _______",
         image_context: null,
         options: [
           { id: "a", text: "Gama testing", image: null },
@@ -1325,7 +1333,7 @@ window.quizData = [
       },
       {
         id: "10.5_2025_HCI",
-        question_text: "There are stages of empirical research.",
+        question_text: "There are _______ stages of empirical research.",
         image_context: null,
         options: [
           { id: "a", text: "Three", image: null },
@@ -1338,7 +1346,7 @@ window.quizData = [
       },
       {
         id: "10.6_2025_HCI",
-        question_text: "Data we get from observation is data.",
+        question_text: "Data we get from observation is _______ data.",
         image_context: null,
         options: [
           { id: "a", text: "Reflective", image: null },
@@ -1351,7 +1359,7 @@ window.quizData = [
       },
       {
         id: "10.7_2025_HCI",
-        question_text: "Node in a CFG for each numbered",
+        question_text: "Node in a CFG for each numbered _______",
         image_context: null,
         options: [
           { id: "a", text: "Line number", image: null },
@@ -1376,7 +1384,7 @@ window.quizData = [
       {
         id: "10.9_2025_HCI",
         question_text:
-          "Stubs are used to simulate routines called by the routines under test.",
+          "Stubs are used to simulate effect of _______ routines called by the routines under test.",
         image_context: null,
         options: [
           { id: "a", text: "lower-level", image: null },
@@ -1419,7 +1427,8 @@ window.quizData = [
       },
       {
         id: "11.2_2025_HCI",
-        question_text: "There are broadly stages of empirical research?",
+        question_text:
+          "There are broadly _______ stages of empirical research?",
         image_context: null,
         options: [
           { id: "a", text: "Two", image: null },
@@ -1433,7 +1442,7 @@ window.quizData = [
       {
         id: "11.3_2025_HCI",
         question_text:
-          'Suppose we formed three research questions: RQ1: Is the new technique good? RQ2: Is our text input interface better than the text input interface provided by, say, MS Word? RQ3: Does the new interface let me enter text "faster" than MS Word? We call RQ3 and RQ1 as',
+          'Suppose we formed three research questions: RQ1: Is the new technique good? RQ2: Is our text input interface better than the text input interface provided by, say, MS Word? RQ3: Does the new interface let me enter text "faster" than MS Word? We call RQ3 _______ and RQ1 as _______',
         image_context: null,
         options: [
           { id: "a", text: "testable, non-testable", image: null },
@@ -1461,7 +1470,7 @@ window.quizData = [
       {
         id: "11.5_2025_HCI",
         question_text:
-          "In , we assign some (arbitrary) codes to attributes of observational data.",
+          "In _______, we assign some (arbitrary) codes to attributes of observational data.",
         image_context: null,
         options: [
           { id: "a", text: "nominal", image: null },
@@ -1487,7 +1496,7 @@ window.quizData = [
       {
         id: "11.7_2025_HCI",
         question_text:
-          "are variables that influence both the independent and dependent variables in a study, potentially leading to incorrect conclusions about the relationship between the two.",
+          "_______ are variables that influence both the independent and dependent variables in a study, potentially leading to incorrect conclusions about the relationship between the two.",
         image_context: null,
         options: [
           { id: "a", text: "Dependant variables", image: null },
@@ -1513,7 +1522,7 @@ window.quizData = [
       {
         id: "11.9_2025_HCI",
         question_text:
-          "To draw reliable conclusions from empirical data, we should use between and participants.",
+          "To draw reliable conclusions from empirical data, we should use between _______ and _______ participants.",
         image_context: null,
         options: [
           { id: "a", text: "1, 5", image: null },
@@ -1547,7 +1556,7 @@ window.quizData = [
       {
         id: "12.1_2025_HCI",
         question_text:
-          "With the significance test, we try to the null hypothesis.",
+          "With the significance test, we try to _______ the null hypothesis.",
         image_context: null,
         options: [
           { id: "a", text: "Accept", image: null },
@@ -1558,7 +1567,7 @@ window.quizData = [
       },
       {
         id: "12.2_2025_HCI",
-        question_text: "Type I error is also known as",
+        question_text: "Type I error is also known as _______",
         image_context: null,
         options: [
           { id: "a", text: "False positive", image: null },
@@ -1584,7 +1593,7 @@ window.quizData = [
       {
         id: "12.4_2025_HCI",
         question_text:
-          "There are broadly two categories of the techniques for significance test:",
+          "There are broadly two categories of the techniques for significance test: _______ and _______",
         image_context: null,
         options: [
           { id: "a", text: "Parametric and Non-parametric", image: null },
@@ -1625,7 +1634,7 @@ window.quizData = [
       {
         id: "12.7_2025_HCI",
         question_text:
-          "According to Boehm, software cost estimation should be done through stages.",
+          "According to Boehm, software cost estimation should be done through _______ stages.",
         image_context: null,
         options: [
           { id: "a", text: "Two", image: null },
@@ -1649,7 +1658,7 @@ window.quizData = [
       },
       {
         id: "12.9_2025_HCI",
-        question_text: "Scrum is a method.",
+        question_text: "Scrum is a _______ method.",
         image_context: null,
         options: [
           { id: "a", text: "Traditional SDLC", image: null },
@@ -1661,7 +1670,7 @@ window.quizData = [
       {
         id: "12.10_2025_HCI",
         question_text:
-          "In a Gantt chart the length is proportional to for activity",
+          "In a Gantt chart the length is proportional to _______ for activity",
         image_context: null,
         options: [
           { id: "a", text: "Duration planned", image: null },

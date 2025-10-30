@@ -25,5 +25,16 @@ const appConfig = {
         // { year: 2024, file: 'data2024.js' }
       ],
     },
+    {
+      id: "IOT",
+      name: "Introduction to IOT",
+      shortName: "IOT",
+      icon: "🔧",
+      folder: "IOT",
+      years: [
+        // { year: 2025, file: 'data2025.js' },
+        { year: 2024, file: "data2024.js" },
+      ],
+    },
   ],
 };
