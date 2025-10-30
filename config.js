@@ -8,9 +8,9 @@ const appConfig = {
       icon: "💻",
       folder: "HCI",
       years: [
-        { year: 2025, file: "data2025.js" },
-        { year: 2024, file: "data2024.js" },
-        { year: 2023, file: "data2023.js" },
+        { label: "2025", year: 2025, file: "data2025.js" },
+        { label: "2024", year: 2024, file: "data2024.js" },
+        { label: "2023", year: 2023, file: "data2023.js" },
       ],
     },
     {
@@ -20,8 +20,8 @@ const appConfig = {
       icon: "🔧",
       folder: "IIOT",
       years: [
-        { year: 2025, file: "data2025.js" },
-        // { year: 2024, file: 'data2024.js' }
+        { label: "2025 Jan-Apr", year: 2025, file: "data2025a.js" },
+        { label: "2024 Jul-Oct", year: 2025, file: "data2025b.js" },
       ],
     },
     {
@@ -31,9 +31,9 @@ const appConfig = {
       icon: "🔧",
       folder: "IOT",
       years: [
-        { year: 2025, file: "data2025.js" },
-        { year: 2024, file: "data2024.js" },
-        { year: 2023, file: "data2023.js" },
+        { label: "2025", year: 2025, file: "data2025.js" },
+        { label: "2024", year: 2024, file: "data2024.js" },
+        { label: "2023", year: 2023, file: "data2023.js" },
       ],
     },
   ],

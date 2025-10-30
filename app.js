@@ -112,7 +112,7 @@ function renderYears() {
     card.className = "card";
     card.innerHTML = `
             <div class="icon">📅</div>
-            <div class="title">${yearData.year}</div>
+            <div class="title">${yearData.label}</div>
         `;
     card.onclick = () => selectYear(yearData);
     yearList.appendChild(card);
