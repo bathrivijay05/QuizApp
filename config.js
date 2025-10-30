@@ -32,7 +32,7 @@ const appConfig = {
       icon: "🔧",
       folder: "IOT",
       years: [
-        // { year: 2025, file: 'data2025.js' },
+        { year: 2025, file: "data2025.js" },
         { year: 2024, file: "data2024.js" },
       ],
     },
