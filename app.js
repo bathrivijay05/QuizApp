@@ -2,6 +2,7 @@
 let currentState = {
   subject: null,
   year: null,
+  label: null,
   week: null,
   quizData: null,
   currentQuestionIndex: 0,
@@ -27,6 +28,7 @@ function showSubjectSelection() {
   currentState.subject = null;
   currentState.quizData = null;
   currentState.year = null;
+  currentState.label = null;
   currentState.week = null;
   currentState.currentQuestionIndex = 0;
   currentState.userAnswers = {};
@@ -44,6 +46,7 @@ function showYearSelection() {
   // Clear quiz data when returning to year selection
   currentState.quizData = null;
   currentState.year = null;
+  currentState.label = null;
   currentState.week = null;
   currentState.currentQuestionIndex = 0;
   currentState.userAnswers = {};
@@ -125,7 +128,7 @@ function renderWeeks() {
 
   document.getElementById(
     "week-screen-title"
-  ).textContent = `${subject.shortName} ${currentState.year} - Select Assignment`;
+  ).textContent = `${subject.shortName} ${currentState.label} - Select Assignment`;
   weekList.innerHTML = "";
 
   if (currentState.quizData && currentState.quizData.length > 0) {
@@ -160,7 +163,7 @@ function renderQuestion() {
   const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
   document.getElementById(
     "quiz-title"
-  ).textContent = `${subject.shortName} ${currentState.year} - ${assignment.assignment}`;
+  ).textContent = `${subject.shortName} ${currentState.label} - ${assignment.assignment}`;
   document.getElementById("current-question-num").textContent =
     currentState.currentQuestionIndex + 1;
   document.getElementById("total-questions").textContent =
@@ -292,6 +295,7 @@ function selectSubject(subject) {
 
 async function selectYear(yearData) {
   currentState.year = yearData.year;
+  currentState.label = yearData.label; // Store the label for display
   const subject = appConfig.subjects.find((s) => s.id === currentState.subject);
 
   try {
@@ -517,6 +521,7 @@ function resetState() {
   currentState = {
     subject: null,
     year: null,
+    label: null,
     week: null,
     quizData: null,
     currentQuestionIndex: 0,
