@@ -1,6 +1,6 @@
-# 🎓 Friendly Quiz App
+# 🎓 Quiz App
 
-A modern, interactive quiz application for testing your knowledge. Built with vanilla JavaScript - no dependencies, just open and start learning!
+A modern, interactive quiz application for testing your knowledge. Built with JavaScript - no dependencies, just open and start learning!
 
 ## 🚀 Quick Start
 
@@ -19,11 +19,16 @@ python -m http.server 8200
 
 ## � Available Content
 
-- **HCI (Human Computer Interactions)**
-  - ✅ 2024: 12 weeks, 120 questions
-  - ✅ 2025: 12 weeks, 120 questions
-- **IIOT (Industrial IOT)**
-  - ⏳ Coming soon
+- **HCI (Human Computer Interactions) - NPTEL**
+  - ✅ 2023: 12 weeks
+  - ✅ 2024: 12 weeks
+  - ✅ 2025: 12 weeks
+- **IIOT (Industrial IOT) - NPTEL**
+  - ✅ 2025: 12 weeks
+- **IOT (Intro to IOT) - NPTEL**
+  - ✅ 2023: 12 weeks
+  - ✅ 2024: 12 weeks
+  - ✅ 2025: 12 weeks
 
 ## ✨ Features
 
