@@ -1,4 +1,4 @@
-windows.quizData = [
+window.quizData = [
   {
     assignment: "Assignment-Week 0",
     week: 0,
