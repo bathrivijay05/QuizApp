@@ -6,9 +6,8 @@ window.quizData = [
       {
         id: "1.1_2025_IIOT",
         question_text:
-          "Fill in the blank space designated by the question mark in the figure: Input Signal -> [Sensor] -> [_____] -> [Actuator] -> Output Signal.",
-        image_context:
-          "Diagram showing the flow from Input Signal to Output Signal through Sensor and Actuator with a blank in the middle box is required.",
+          "Fill in the blank space designated by the question mark. \nInput Signal -> Sensor -> (?) -> Actuator -> Output Signal\n(The boxes for Sensor, ?, and Actuator are enclosed in a dashed box labeled Transducer. The box for Sensor is enclosed in a dashed box labeled Transducer's input. The boxes for Actuator and ? are enclosed in a dashed box labeled Transducer's output.)",
+        image_context: "",
         options: [
           { id: "a", text: "Snubber", image: null },
           { id: "b", text: "Repeater", image: null },
@@ -172,7 +171,7 @@ window.quizData = [
       {
         id: "1.12_2025_IIOT",
         question_text:
-          "In CoRE the IoT client uses _____ for the discovery of IoT devices.",
+          "Fill in the blank. In CoRE the IoT client uses ______ for the discovery of IoT devices.",
         image_context: null,
         options: [
           { id: "a", text: "Lookup interface", image: null },
@@ -213,7 +212,7 @@ window.quizData = [
       },
       {
         id: "1.15_2025_IIOT",
-        question_text: "Which of the following is **not** a component of RFID?",
+        question_text: "Which of the following is not a component of RFID?",
         image_context: null,
         options: [
           { id: "a", text: "RFID Tag", image: null },
@@ -247,7 +246,7 @@ window.quizData = [
       {
         id: "2.2_2025_IIOT",
         question_text:
-          "Statement: Business, providing information goods, has virtually zero transportation and replication cost.",
+          "State True or False. Business, providing information goods, has virtually zero transportation and replication cost.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -463,7 +462,7 @@ window.quizData = [
       {
         id: "2.12_2025_IIOT",
         question_text:
-          "Which of the following is **not** a component of a Smart Factory?",
+          "Which of the following is not a component of a Smart Factory?",
         image_context: null,
         options: [
           { id: "a", text: "Smart machines", image: null },
@@ -495,7 +494,7 @@ window.quizData = [
       {
         id: "2.14_2025_IIOT",
         question_text:
-          "Which of the following is **not** a prerequisite of the Industrial Internet of Things?",
+          "Which of the following is not a prerequisite of the Industrial Internet of Things?",
         image_context: null,
         options: [
           { id: "a", text: "Security", image: null },
@@ -579,7 +578,8 @@ window.quizData = [
       },
       {
         id: "3.3_2025_IIOT",
-        question_text: "In healthcare applications, CPS is used for _____.",
+        question_text:
+          "Fill in the blanks. In healthcare applications, CPS is used for _____.",
         image_context: null,
         options: [
           { id: "a", text: "Image-guided surgery and therapy", image: null },
@@ -620,7 +620,8 @@ window.quizData = [
       },
       {
         id: "3.6_2025_IIOT",
-        question_text: "Intelligent sensors are capable of _____.",
+        question_text:
+          "Fill in the blanks. Intelligent sensors are capable of _____.",
         image_context: null,
         options: [
           { id: "a", text: "Only sensing data", image: null },
@@ -682,7 +683,7 @@ window.quizData = [
       {
         id: "3.9_2025_IIOT",
         question_text:
-          "Which of the following is **not** a key component of an AR Device?",
+          "Which of the following is not a key component of an AR Device?",
         image_context: null,
         options: [
           { id: "a", text: "Sensors", image: null },
@@ -695,7 +696,7 @@ window.quizData = [
       },
       {
         id: "3.10_2025_IIOT",
-        question_text: "Which of the following statements is **incorrect**?",
+        question_text: "Which of the following statements is incorrect?",
         image_context: null,
         options: [
           {
@@ -725,7 +726,7 @@ window.quizData = [
       {
         id: "3.11_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a challenge of AI in IIoT?",
+          "Which of the following is NOT a challenge of AI in IIoT?",
         image_context: null,
         options: [
           { id: "a", text: "Connecting devices", image: null },
@@ -779,7 +780,7 @@ window.quizData = [
       {
         id: "3.14_2025_IIOT",
         question_text:
-          "Which of the following is **not** one of the primary constraints of mobile CPS?",
+          "Which of the following is not one of the primary constraints of mobile CPS?",
         image_context: null,
         options: [
           { id: "a", text: "Stability of the network", image: null },
@@ -925,7 +926,7 @@ window.quizData = [
       {
         id: "4.6_2025_IIOT",
         question_text:
-          "Which of the following is **not** a differentiator between IIoT and Automation?",
+          "Which of the following is not a differentiator between IIoT and Automation?",
         image_context: null,
         options: [
           { id: "a", text: "Ubiquitous sensing", image: null },
@@ -969,7 +970,7 @@ window.quizData = [
       {
         id: "4.8_2025_IIOT",
         question_text:
-          'According to GE, _____ can be defined as "the association of the global industrial system with low-cost sensing, interconnectivity through internet, high-level computing and analytics.',
+          'Fill in the blank. According to GE, ______ can be defined as "the association of the global industrial system with low-cost sensing, interconnectivity through internet, high-level computing and analytics".',
         image_context: null,
         options: [
           { id: "a", text: "Industrial Internet", image: null },
@@ -1041,8 +1042,7 @@ window.quizData = [
       },
       {
         id: "4.11_2025_IIOT",
-        question_text:
-          "Which of the following is **not** an advantage of WSANs?",
+        question_text: "Which of the following is not an advantage of WSANs?",
         image_context: null,
         options: [
           { id: "a", text: "Preinstalled infrastructure", image: null },
@@ -1154,7 +1154,7 @@ window.quizData = [
       {
         id: "5.1_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key sector of Industry 4.0?",
+          "Which of the following is NOT a key sector of Industry 4.0?",
         image_context: null,
         options: [
           { id: "a", text: "Smart robotics", image: null },
@@ -1196,7 +1196,7 @@ window.quizData = [
       {
         id: "5.4_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a component of IIoT business models?",
+          "Which of the following is NOT a component of IIoT business models?",
         image_context: null,
         options: [
           { id: "a", text: "Value Proposition", image: null },
@@ -1232,12 +1232,12 @@ window.quizData = [
       {
         id: "5.6_2025_IIOT",
         question_text:
-          "Based on the leading and lagging Occupational Safety and Health (OSH) indicators, Key Performance Indicators (KPIs) are also categorized into _______.",
+          "Fill in the blanks. Based on the leading and lagging Occupational Safety and Health (OSH) indicators, Key Performance Indicators (KPIs) are also categorized into Leading KPI and ______.",
         image_context: null,
         options: [
-          { id: "a", text: "Leading KPI and Lagging KPI", image: null },
-          { id: "b", text: "Low KPI and High KPI", image: null },
-          { id: "c", text: "Level KPI and ground KPI", image: null },
+          { id: "a", text: "Lagging KPI", image: null },
+          { id: "b", text: "Low KPI", image: null },
+          { id: "c", text: "Level KPI", image: null },
           { id: "d", text: "None of these", image: null },
         ],
         correct_answers: ["a"],
@@ -1246,7 +1246,7 @@ window.quizData = [
       {
         id: "5.7_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** one of the four viewpoints in the Industrial Internet Reference Architecture (IIRA)?",
+          "Which of the following is NOT one of the four viewpoints in the Industrial Internet Reference Architecture (IIRA)?",
         image_context: null,
         options: [
           { id: "a", text: "Business viewpoint", image: null },
@@ -1260,7 +1260,7 @@ window.quizData = [
       {
         id: "5.8_2025_IIOT",
         question_text:
-          'Statement: In the Usage Viewpoint of IIRA, "Task" is a basic unit of work carried out by a party assuming a role.',
+          'State true or false. In the Usage Viewpoint of IIRA, "Task" is a basic unit of work carried out by a party assuming a role.',
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1374,7 +1374,7 @@ window.quizData = [
       {
         id: "5.14_2025_IIOT",
         question_text:
-          "Statement: Lack of interoperability, data privacy, security issues, and authentication of data at the organizational level are some of the major challenges of IIoT-based business models.",
+          "State true or false. Lack of interoperability, data privacy, security issues, and authentication of data at the organizational level are some of the major challenges of IIoT-based business models.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1386,7 +1386,7 @@ window.quizData = [
       {
         id: "5.15_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a standard IIoT reference architecture?",
+          "Which of the following is NOT a standard IIoT reference architecture?",
         image_context: null,
         options: [
           { id: "a", text: "Three-tier IIoT architecture", image: null },
@@ -1629,7 +1629,7 @@ window.quizData = [
       {
         id: "7.1_2025_IIOT",
         question_text:
-          "Which of the following topologies is **NOT** supported by Zigbee?",
+          "Which of the following topologies is NOT supported by Zigbee?",
         image_context: null,
         options: [
           { id: "a", text: "Tree", image: null },
@@ -1699,7 +1699,7 @@ window.quizData = [
       {
         id: "7.5_2025_IIOT",
         question_text:
-          "Statement: Machine-to-Machine Interface (M2MI) is one of the major components of Supervisory control and Data Acquisition that is used for enabling control and operations of the remote processes by human operators.",
+          "State true or false. Machine-to-Machine Interface (M2MI) is one of the major components of Supervisory control and Data Acquisition that is used for enabling control and operations of the remote processes by human operators.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1711,7 +1711,7 @@ window.quizData = [
       {
         id: "7.6_2025_IIOT",
         question_text:
-          "Zigbee uses the _____ standard for defining its physical and medium access control (layers 1 and 2 of the OSI stack).",
+          "Fill in the blanks. Zigbee uses the ______ standard for defining its physical and medium access control (layers 1 and 2 of the OSI stack).",
         image_context: null,
         options: [
           { id: "a", text: "IEEE 802.16.6", image: null },
@@ -1725,7 +1725,7 @@ window.quizData = [
       {
         id: "7.7_2025_IIOT",
         question_text:
-          "Statement: The SIGFOX network can transmit up to 140 messages per day with a payload of 12 bytes per message.",
+          "State True or False. The SIGFOX network can transmit up to 140 messages per day with a payload of 12 bytes per message.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1737,7 +1737,7 @@ window.quizData = [
       {
         id: "7.8_2025_IIOT",
         question_text:
-          "Which of the following is/are **false** about the rule-based engine?",
+          "Which of the following is/are false about the rule-based engine?",
         image_context: null,
         options: [
           {
@@ -1762,8 +1762,7 @@ window.quizData = [
       },
       {
         id: "7.9_2025_IIOT",
-        question_text:
-          "Which of the following is **NOT** a Zigbee device type?",
+        question_text: "Which of the following is NOT a Zigbee device type?",
         image_context: null,
         options: [
           { id: "a", text: "Coordinator", image: null },
@@ -1817,7 +1816,7 @@ window.quizData = [
       {
         id: "7.12_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key component of the Smart Water Management Platform (SWAMP)?",
+          "Which of the following is NOT a key component of the Smart Water Management Platform (SWAMP)?",
         image_context: null,
         options: [
           { id: "a", text: "Sensors", image: null },
@@ -1831,7 +1830,7 @@ window.quizData = [
       {
         id: "7.13_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a phase of Industrial Manufacturing workflow?",
+          "Which of the following is NOT a phase of Industrial Manufacturing workflow?",
         image_context: null,
         options: [
           {
@@ -1857,7 +1856,7 @@ window.quizData = [
       {
         id: "7.14_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key component of SCADA?",
+          "Which of the following is NOT a key component of SCADA?",
         image_context: null,
         options: [
           { id: "a", text: "Sensors and Control Relays", image: null },
@@ -1871,7 +1870,7 @@ window.quizData = [
       {
         id: "7.15_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a major component of an Industrial Control System?",
+          "Which of the following is NOT a major component of an Industrial Control System?",
         image_context: null,
         options: [
           { id: "a", text: "Process Variables", image: null },
@@ -1890,166 +1889,138 @@ window.quizData = [
     questions: [
       {
         id: "8.1_2025_IIOT",
-        question_text: "What is the goal of prognostic analytics in IIoT?",
-        image_context: null,
-        options: [
-          { id: "a", text: "Identify root cause of an anomaly", image: null },
-          {
-            id: "b",
-            text: "Inform about remaining useful life of an asset",
-            image: null,
-          },
-          { id: "c", text: "Detect real-time behavior", image: null },
-          { id: "d", text: "Filter low-quality data", image: null },
-        ],
-        correct_answers: ["b"],
-        type: "Single-Select MCQ",
-      },
-      {
-        id: "8.2_2025_IIOT",
-        question_text: "What are the three types of IIoT Analytics?",
-        image_context: null,
-        options: [
-          { id: "a", text: "Logical, Statistical, and Neural", image: null },
-          { id: "b", text: "Predictive, Adaptive, and Reactive", image: null },
-          {
-            id: "c",
-            text: "Descriptive, Predictive, and Prescriptive",
-            image: null,
-          },
-          { id: "d", text: "Linear, Non-linear, and Mixed", image: null },
-        ],
-        correct_answers: ["c"],
-        type: "Single-Select MCQ",
-      },
-      {
-        id: "8.3_2025_IIOT",
         question_text:
-          "What is a key difference between the process of Machine Learning and Deep Learning?",
+          "Which of the following is NOT a key characteristic of Big Data Analytics in IIoT?",
         image_context: null,
         options: [
-          {
-            id: "a",
-            text: "Machine Learning uses neural networks, while Deep Learning does not.",
-            image: null,
-          },
-          {
-            id: "b",
-            text: 'Deep Learning requires the "Feature extraction" step, while Machine Learning does not.',
-            image: null,
-          },
-          {
-            id: "c",
-            text: "Machine Learning requires manual feature extraction, while Deep Learning learns features automatically.",
-            image: null,
-          },
-          {
-            id: "d",
-            text: "Deep Learning is a type of unsupervised learning only.",
-            image: null,
-          },
-        ],
-        correct_answers: ["c"],
-        type: "Single-Select MCQ",
-      },
-      {
-        id: "8.4_2025_IIOT",
-        question_text:
-          "According to the Venn diagram, Data Science is the intersection of Computer Science, Domain Expertise, and what other field?",
-        image_context: null,
-        options: [
-          {
-            id: "a",
-            text: "Mathematics and Statistical Research",
-            image: null,
-          },
-          { id: "b", text: "Mechanical Engineering", image: null },
-          { id: "c", text: "Business Management", image: null },
-          { id: "d", text: "Psychology", image: null },
-        ],
-        correct_answers: ["a"],
-        type: "Single-Select MCQ",
-      },
-      {
-        id: "8.5_2025_IIOT",
-        question_text:
-          "Supervised learning is divided into two main types of problems. What are they?",
-        image_context: null,
-        options: [
-          { id: "a", text: "Clustering and Association", image: null },
-          { id: "b", text: "K-Means and Fuzzy c-Means", image: null },
-          { id: "c", text: "State and Action", image: null },
-          { id: "d", text: "Regression and Classification", image: null },
+          { id: "a", text: "Volume", image: null },
+          { id: "b", text: "Velocity", image: null },
+          { id: "c", text: "Veracity", image: null },
+          { id: "d", text: "Validation", image: null },
         ],
         correct_answers: ["d"],
         type: "Single-Select MCQ",
       },
       {
-        id: "8.6_2025_IIOT",
+        id: "8.2_2025_IIOT",
         question_text:
-          'In Reinforcement Learning, what does an "agent" learn from?',
+          "Which software is commonly used for batch-oriented analytics?",
         image_context: null,
         options: [
-          {
-            id: "a",
-            text: "An environment by taking actions and receiving rewards or penalties",
-            image: null,
-          },
-          {
-            id: "b",
-            text: "An unlabeled dataset with hidden patterns",
-            image: null,
-          },
-          {
-            id: "c",
-            text: "A labeled dataset provided by a supervisor",
-            image: null,
-          },
-          { id: "d", text: "A set of predefined rules", image: null },
+          { id: "a", text: "C++ and Java", image: null },
+          { id: "b", text: "Apache Hadoop and Apache Spark", image: null },
+          { id: "c", text: "Pandas and Numpy", image: null },
+          { id: "d", text: "MongoDB and MySQL", image: null },
         ],
-        correct_answers: ["a"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
-        id: "8.7_2025_IIOT",
+        id: "8.3_2025_IIOT",
         question_text:
-          "How does the performance of Deep Learning typically compare to traditional Machine Learning as the amount of data increases?",
+          "Which of the following is NOT a fundamental type of IIoT Analytics?",
         image_context: null,
         options: [
-          {
-            id: "a",
-            text: "The performance of both levels off at the same point.",
-            image: null,
-          },
-          {
-            id: "b",
-            text: "Traditional ML performance continues to improve, while DL performance levels off.",
-            image: null,
-          },
-          {
-            id: "c",
-            text: "DL performance often continues to improve with more data, while traditional ML performance may level off.",
-            image: null,
-          },
-          {
-            id: "d",
-            text: "Both show decreased performance with more data.",
-            image: null,
-          },
+          { id: "a", text: "Descriptive Analytics", image: null },
+          { id: "b", text: "Predictive Analytics", image: null },
+          { id: "c", text: "Prescriptive Analytics", image: null },
+          { id: "d", text: "Structural Analytics", image: null },
+        ],
+        correct_answers: ["d"],
+        type: "Single-Select MCQ",
+      },
+      {
+        id: "8.4_2025_IIOT",
+        question_text:
+          "Which machine learning algorithm enables machines to improve their performance by automatically learning the ideal behaviors for a specific environment?",
+        image_context: null,
+        options: [
+          { id: "a", text: "Supervised Learning", image: null },
+          { id: "b", text: "Unsupervised Learning", image: null },
+          { id: "c", text: "Reinforcement Learning", image: null },
+          { id: "d", text: "Regression", image: null },
         ],
         correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
-        id: "8.8_2025_IIOT",
+        id: "8.5_2025_IIOT",
         question_text:
-          "The deep learning concept of breaking a complex task into simpler tasks follows what principle?",
+          "Which of the following represents a key feature of Fuzzy c-Means clustering?",
         image_context: null,
         options: [
-          { id: "a", text: "A nested hierarchy of concepts", image: null },
-          { id: "b", text: "A linear regression model", image: null },
-          { id: "c", text: "Random decision making", image: null },
-          { id: "d", text: "A last-in, first-out stack", image: null },
+          {
+            id: "a",
+            text: "A data point can belong to more than one cluster",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "A data point belongs strictly to only one cluster",
+            image: null,
+          },
+          { id: "c", text: "Extremely slower than K-Means", image: null },
+          { id: "d", text: "None of these", image: null },
+        ],
+        correct_answers: ["a"],
+        type: "Single-Select MCQ",
+      },
+      {
+        id: "8.6_2025_IIOT",
+        question_text:
+          "Which of the following is TRUE about the Thing Worx platform?",
+        image_context: null,
+        options: [
+          { id: "a", text: "Perform complex analytical process", image: null },
+          { id: "b", text: "Deliver real-time perception", image: null },
+          {
+            id: "c",
+            text: "Has the ability to monitor the condition",
+            image: null,
+          },
+          { id: "d", text: "All of these", image: null },
+        ],
+        correct_answers: ["d"],
+        type: "Multi-Select MCQ",
+      },
+      {
+        id: "8.7_2025_IIOT",
+        question_text:
+          'State True or False. Deep learning is an "end-to-end learning", which extracts features on its own. On the contrary, in machine learning, features are to be explicitly mentioned.',
+        image_context: null,
+        options: [
+          { id: "a", text: "True", image: null },
+          { id: "b", text: "False", image: null },
+        ],
+        correct_answers: ["a"],
+        type: "True/False",
+      },
+      {
+        id: "8.8_2025_IIOT",
+        question_text:
+          "Which of the following statements is TRUE about machine learning (ML)?",
+        image_context: null,
+        options: [
+          {
+            id: "a",
+            text: "ML is the subset of AI that can learn automatically from the object features",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "ML is the subset of DL which can learn automatically by finding the features of the object on its own",
+            image: null,
+          },
+          {
+            id: "c",
+            text: "ML always performs better than Deep Learning models",
+            image: null,
+          },
+          {
+            id: "d",
+            text: "ML can only be used for image recognition tasks",
+            image: null,
+          },
         ],
         correct_answers: ["a"],
         type: "Single-Select MCQ",
@@ -2057,7 +2028,7 @@ window.quizData = [
       {
         id: "8.9_2025_IIOT",
         question_text:
-          "Which of the following statements about MindSphere is **incorrect**?",
+          "Which of the following statements about MindSphere is incorrect?",
         image_context: null,
         options: [
           {
@@ -2079,39 +2050,31 @@ window.quizData = [
       {
         id: "8.10_2025_IIOT",
         question_text:
-          "What is a major reason for needing cloud computing in IIoT?",
+          "Which of the following is/are key characteristic(s) of a Consumer IoT cloud platform?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "To decrease the number of connected devices.",
+            text: "Provide very specific applications for end users",
             image: null,
           },
-          {
-            id: "b",
-            text: "To handle the huge amount of unorganized and heterogeneous data, including data from M2M sensors.",
-            image: null,
-          },
-          {
-            id: "c",
-            text: "To ensure all data has the same quality.",
-            image: null,
-          },
-          { id: "d", text: "To reduce the need for networking.", image: null },
+          { id: "b", text: "Provide modest security", image: null },
+          { id: "c", text: "Generally cost-sensitive", image: null },
+          { id: "d", text: "All of these", image: null },
         ],
-        correct_answers: ["b"],
-        type: "Single-Select MCQ",
+        correct_answers: ["d"],
+        type: "Multi-Select MCQ",
       },
       {
         id: "8.11_2025_IIOT",
         question_text:
-          "Which IIoT platform, offered by a software firm, provides a storage service called C3 Data Lake for unstructured data?",
+          "Which of the following is NOT a fundamental cloud computing service?",
         image_context: null,
         options: [
-          { id: "a", text: "GE Predix", image: null },
-          { id: "b", text: "Siemens MindSphere", image: null },
-          { id: "c", text: "C3 IoT", image: null },
-          { id: "d", text: "Uptake", image: null },
+          { id: "a", text: "Software-as-a-Service", image: null },
+          { id: "b", text: "Platform-as-a-Service", image: null },
+          { id: "c", text: "ERP-as-a-Service", image: null },
+          { id: "d", text: "Infrastructure-as-a-Service", image: null },
         ],
         correct_answers: ["c"],
         type: "Single-Select MCQ",
@@ -2119,71 +2082,72 @@ window.quizData = [
       {
         id: "8.12_2025_IIOT",
         question_text:
-          "Which of the following is a characteristic of a good SLA?",
+          "Which of the following services is NOT provided by C3 IoT?",
         image_context: null,
         options: [
-          { id: "a", text: "Vague and unmeasurable", image: null },
-          { id: "b", text: "Unachievable", image: null },
-          { id: "c", text: "Uncontrollable", image: null },
-          {
-            id: "d",
-            text: "Quantifiable and Mutually Acceptable",
-            image: null,
-          },
+          { id: "a", text: "Predictive Maintenance", image: null },
+          { id: "b", text: "Inventory Optimization", image: null },
+          { id: "c", text: "IoT Hardware Analysis", image: null },
+          { id: "d", text: "Fraud Detection", image: null },
         ],
-        correct_answers: ["d"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
         id: "8.13_2025_IIOT",
         question_text:
-          "Which of the following represents the characteristics of a good SLA? _____.",
+          "Which of the following cloud platform providers does not offer IIoT device management services?",
         image_context: null,
         options: [
-          { id: "a", text: "Affordable", image: null },
-          { id: "b", text: "Achievable", image: null },
-          { id: "c", text: "Quantifiable", image: null },
-          { id: "d", text: "All of these", image: null },
+          { id: "a", text: "Bosch IoT Remote Manager", image: null },
+          { id: "b", text: "Facebook Cloud Services", image: null },
+          { id: "c", text: "AWS's IoT Device Management", image: null },
+          { id: "d", text: "ICP DAS's IoTstar", image: null },
         ],
-        correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        correct_answers: ["b"],
+        type: "Single-Select MCQ",
       },
       {
         id: "8.14_2025_IIOT",
         question_text:
-          "Statement: Based on the application type, two popular types of deep learning methods are convolutional neural networks (CNNs) and recurrent neural networks (RNNs).",
-        image_context: null,
-        options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
-        ],
-        correct_answers: ["a"],
-        type: "True/False",
-      },
-      {
-        id: "8.15_2025_IIOT",
-        question_text:
-          "Which of the following are the key characteristics that classify data as Big Data in IoT applications?",
+          'What does "Variety" refer to in the context of data generation?',
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Accuracy, redundancy, scalability, latency, security",
+            text: "The speed at which data is generated",
             image: null,
           },
-          {
-            id: "b",
-            text: "Volume, variety, value, velocity, veracity",
-            image: null,
-          },
+          { id: "b", text: "The amount of data generated", image: null },
           {
             id: "c",
-            text: "Throughput, delay, integrity, topology, clustering",
+            text: "The format of data generated, such as structured, semi-structured, or unstructured",
             image: null,
           },
           {
             id: "d",
-            text: "Capacity, compatibility, complexity, connectivity, coverage",
+            text: "The accuracy and reliability of data generated",
+            image: null,
+          },
+        ],
+        correct_answers: ["c"],
+        type: "Single-Select MCQ",
+      },
+      {
+        id: "8.15_2025_IIOT",
+        question_text: "What does the 'K' in K-means clustering represent?",
+        image_context: null,
+        options: [
+          { id: "a", text: "Number of features in the dataset", image: null },
+          { id: "b", text: "Number of clusters to be identified", image: null },
+          {
+            id: "c",
+            text: "Maximum iterations allowed in the process",
+            image: null,
+          },
+          {
+            id: "d",
+            text: "Number of data points in each cluster",
             image: null,
           },
         ],
@@ -2199,37 +2163,33 @@ window.quizData = [
       {
         id: "9.1_2025_IIOT",
         question_text:
-          "In the Fog Computing architecture for IIoT, where are the Fog Devices located?",
+          "Which of the following can be rendered by the fog-enabled IIoT?",
         image_context: null,
         options: [
-          { id: "a", text: "Above the Cloud layer.", image: null },
           {
-            id: "b",
-            text: "Between the Cloud and the Industrial End Devices.",
+            id: "a",
+            text: "Real-time monitoring and visualization",
             image: null,
           },
-          {
-            id: "c",
-            text: "As part of the Industrial End Devices.",
-            image: null,
-          },
-          { id: "d", text: "Inside the Cloud.", image: null },
+          { id: "b", text: "End-to-end security", image: null },
+          { id: "c", text: "Scalability and flexibility", image: null },
+          { id: "d", text: "All of these", image: null },
         ],
-        correct_answers: ["b"],
-        type: "Single-Select MCQ",
+        correct_answers: ["d"],
+        type: "Multi-Select MCQ",
       },
       {
         id: "9.2_2025_IIOT",
         question_text:
-          "Which of the following is **not** a fog platform provider?",
+          "Which of the following is a Fog Computing platform provider?",
         image_context: null,
         options: [
-          { id: "a", text: "FogHorn", image: null },
-          { id: "b", text: "Nebbiolo Technologies", image: null },
-          { id: "c", text: "Crosser", image: null },
-          { id: "d", text: "Sony", image: null },
+          { id: "a", text: "Netflix", image: null },
+          { id: "b", text: "FogHorn", image: null },
+          { id: "c", text: "Google Search", image: null },
+          { id: "d", text: "Twitter Analytics", image: null },
         ],
-        correct_answers: ["d"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
@@ -2265,126 +2225,90 @@ window.quizData = [
       },
       {
         id: "9.5_2025_IIOT",
-        question_text:
-          "Which of the following is **NOT** a data structure in Julia programming?",
+        question_text: "Which of the following is NOT a data type in R?",
         image_context: null,
         options: [
-          { id: "a", text: "Tuples", image: null },
-          { id: "b", text: "Dictionary", image: null },
-          { id: "c", text: "Coroutine", image: null },
-          { id: "d", text: "Arrays", image: null },
+          { id: "a", text: "Logical", image: null },
+          { id: "b", text: "Integer", image: null },
+          { id: "c", text: "Binary", image: null },
+          { id: "d", text: "Complex", image: null },
         ],
         correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
         id: "9.6_2025_IIOT",
-        question_text:
-          "Which of the following does **NOT** fall under the essential characteristics of cloud computing according to NIST?",
+        question_text: "What is the function of the 'caret' package in R?",
         image_context: null,
         options: [
-          { id: "a", text: "On-demand self-service", image: null },
-          { id: "b", text: "Broad network access", image: null },
-          { id: "c", text: "Resource pooling", image: null },
-          { id: "d", text: "Manual server configuration", image: null },
+          {
+            id: "a",
+            text: "Provides functions for network security",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "Provides functions for creating predictive models",
+            image: null,
+          },
+          { id: "c", text: "Manages file system operations", image: null },
+          { id: "d", text: "Helps in game development", image: null },
         ],
-        correct_answers: ["d"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "9.7_2025_IIOT",
         question_text:
-          "Which of the following does **NOT** represent a NoSQL database?",
+          "In Julia programming language, which of the following is used for string interpolation?",
         image_context: null,
         options: [
-          { id: "a", text: "Key-value databases", image: null },
-          { id: "b", text: "Column-oriented databases", image: null },
-          { id: "c", text: "Document-oriented databases", image: null },
-          { id: "d", text: "Relational databases", image: null },
+          { id: "a", text: "&", image: null },
+          { id: "b", text: "%", image: null },
+          { id: "c", text: "$", image: null },
+          { id: "d", text: "@", image: null },
         ],
-        correct_answers: ["d"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
         id: "9.8_2025_IIOT",
         question_text:
-          "Statement: In Hadoop Distributed File System (HDFS), the Namenode stores the actual data blocks, while Datanodes maintain the metadata information about the files.",
+          "Which of the following is NOT a basic service model of cloud computing?",
         image_context: null,
         options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
-        ],
-        correct_answers: ["b"],
-        type: "True/False",
-      },
-      {
-        id: "9.9_2025_IIOT",
-        question_text:
-          "Which property of a DCN refers to its ability to support any service on any server at any time?",
-        image_context: null,
-        options: [
-          { id: "a", text: "Security", image: null },
-          { id: "b", text: "Reliability", image: null },
-          { id: "c", text: "Scalability", image: null },
-          { id: "d", text: "Agility", image: null },
+          { id: "a", text: "Infrastructure-as-a-Service (IaaS)", image: null },
+          { id: "b", text: "Platform-as-a-Service (PaaS)", image: null },
+          { id: "c", text: "Software-as-a-Service (SaaS)", image: null },
+          { id: "d", text: "Analytics-as-a-Service (AaaS)", image: null },
         ],
         correct_answers: ["d"],
         type: "Single-Select MCQ",
       },
       {
-        id: "9.10_2025_IIOT",
+        id: "9.9_2025_IIOT",
         question_text:
-          "What is the main architectural difference between the DCell/BCube topologies and the traditional Three-Tier topology?",
+          "What is the primary purpose of data pre-processing in IIoT?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "DCell and BCube are server-centric, providing better scalability and fault tolerance.",
+            text: "To always append 50% randomly generated data with the existing dataset",
             image: null,
           },
           {
             id: "b",
-            text: "DCell and BCube are switch-centric, while the Three-Tier topology is server-centric.",
+            text: "To clean, integrate, and filter data before analysis",
             image: null,
           },
           {
             id: "c",
-            text: "DCell and BCube use a single core switch, creating a single point of failure.",
+            text: "To always delete 50% of the existing data randomly",
             image: null,
           },
           {
             id: "d",
-            text: "The Three-Tier topology provides better server-to-server bandwidth.",
-            image: null,
-          },
-        ],
-        correct_answers: ["a"],
-        type: "Single-Select MCQ",
-      },
-      {
-        id: "9.11_2025_IIOT",
-        question_text:
-          "What is the core principle of a Software-Defined Data Center (SDDC)?",
-        image_context: null,
-        options: [
-          {
-            id: "a",
-            text: "All hardware must be from a single vendor.",
-            image: null,
-          },
-          {
-            id: "b",
-            text: "The data center infrastructure is virtualized and abstracted from the underlying hardware.",
-            image: null,
-          },
-          {
-            id: "c",
-            text: "The control and data planes are tightly coupled within the hardware.",
-            image: null,
-          },
-          {
-            id: "d",
-            text: "It relies on manual configuration for all provisioning and operations.",
+            text: "To transfer data directly to users without modification",
             image: null,
           },
         ],
@@ -2392,31 +2316,77 @@ window.quizData = [
         type: "Single-Select MCQ",
       },
       {
-        id: "9.12_2025_IIOT",
+        id: "9.10_2025_IIOT",
         question_text:
-          "In the SDN architecture, which plane contains the physical forwarding devices (switches and routers)?",
+          "State true or false. Hadoop Distributed File System (HDFS) and Kosmosfs are notable file systems derived from the open source codes of Google File System (GFS).",
         image_context: null,
         options: [
-          { id: "a", text: "Data Plane", image: null },
-          { id: "b", text: "Control Plane", image: null },
-          { id: "c", text: "Application Plane", image: null },
-          { id: "d", text: "Management Plane", image: null },
+          { id: "a", text: "True", image: null },
+          { id: "b", text: "False", image: null },
         ],
         correct_answers: ["a"],
+        type: "True/False",
+      },
+      {
+        id: "9.11_2025_IIOT",
+        question_text:
+          "Which of the following is NOT a key requirement for a Data Center Network?",
+        image_context: null,
+        options: [
+          {
+            id: "a",
+            text: "VM migration without changing IP addresses",
+            image: null,
+          },
+          { id: "b", text: "Fast detection of failure", image: null },
+          { id: "c", text: "In-house power plant", image: null },
+          { id: "d", text: "Efficient repair of failure", image: null },
+        ],
+        correct_answers: ["c"],
+        type: "Single-Select MCQ",
+      },
+      {
+        id: "9.12_2025_IIOT",
+        question_text:
+          "Edge, Aggregation, and Core are the components of which Data Center Network topology?",
+        image_context: null,
+        options: [
+          { id: "a", text: "DCell", image: null },
+          { id: "b", text: "Fat-Tree DCN", image: null },
+          { id: "c", text: "BCube", image: null },
+          { id: "d", text: "Hybrid Cloud Network", image: null },
+        ],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "9.13_2025_IIOT",
         question_text:
-          "Which protocol is commonly used to facilitate communication between the SDN controller and the forwarding devices?",
+          "Which of the following statements about the Data Center Network topology- BCube is incorrect?",
         image_context: null,
         options: [
-          { id: "a", text: "OpenFlow", image: null },
-          { id: "b", text: "BGP", image: null },
-          { id: "c", text: "TCP/IP", image: null },
-          { id: "d", text: "HTTP", image: null },
+          {
+            id: "a",
+            text: "Server-centric approach, rather than the switch-oriented practice",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "Places intelligence on modular data center (MDC) servers",
+            image: null,
+          },
+          {
+            id: "c",
+            text: "Provides single serial short paths between any pair of servers",
+            image: null,
+          },
+          {
+            id: "d",
+            text: "Runs a source routing protocol called BSR (Bcube Source Routing)",
+            image: null,
+          },
         ],
-        correct_answers: ["a"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
@@ -2451,14 +2421,32 @@ window.quizData = [
       {
         id: "9.15_2025_IIOT",
         question_text:
-          "Statement: The fog layer increases unnecessary data transmission to the cloud and server by bypassing data filtering and restructuring.",
+          "Which of the following statements is FALSE about fog computing?",
         image_context: null,
         options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
+          {
+            id: "a",
+            text: "The fog layer analyzes a huge volume of real-time data generated from industrial devices and machines.",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "The fog layer simultaneously collects data from various interconnected industrial machines, smart sensors, devices, and robots.",
+            image: null,
+          },
+          {
+            id: "c",
+            text: "The fog layer generates the decisions from the sensed data and delivers them to the actuators with minimum latency.",
+            image: null,
+          },
+          {
+            id: "d",
+            text: "The fog layer increases unnecessary data transmission to the cloud and server by bypassing data filtering and restructuring.",
+            image: null,
+          },
         ],
-        correct_answers: ["b"],
-        type: "True/False",
+        correct_answers: ["d"],
+        type: "Single-Select MCQ",
       },
     ],
   },
@@ -2469,7 +2457,7 @@ window.quizData = [
       {
         id: "10.1_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a component of the SDIIoT architecture?",
+          "Which of the following is NOT a component of the SDIIoT architecture?",
         image_context: null,
         options: [
           { id: "a", text: "SDIIoT-WSN", image: null },
@@ -2483,7 +2471,7 @@ window.quizData = [
       {
         id: "10.2_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a component of SD-Edge IIoT Architecture?",
+          "Which of the following is NOT a component of SD-Edge IIoT Architecture?",
         image_context: null,
         options: [
           { id: "a", text: "Cluster Head", image: null },
@@ -2497,7 +2485,7 @@ window.quizData = [
       {
         id: "10.3_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key attribute of trustworthy IIoT?",
+          "Which of the following is NOT a key attribute of trustworthy IIoT?",
         image_context: null,
         options: [
           { id: "a", text: "Reliability", image: null },
@@ -2569,7 +2557,7 @@ window.quizData = [
       {
         id: "10.7_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a building block of IIoT security?",
+          "Which of the following is NOT a building block of IIoT security?",
         image_context: null,
         options: [
           { id: "a", text: "Cloud security", image: null },
@@ -2597,7 +2585,7 @@ window.quizData = [
       {
         id: "10.9_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key principle of data protection in IIoT?",
+          "Which of the following is NOT a key principle of data protection in IIoT?",
         image_context: null,
         options: [
           { id: "a", text: "Confidentiality", image: null },
@@ -2611,7 +2599,7 @@ window.quizData = [
       {
         id: "10.10_2025_IIOT",
         question_text:
-          "Statement: Caterpillar's AR app generates an end-to-end view of the factory floor, enabling machine operators to detect tool replacement needs and send instructions for replacement.",
+          "State true or false. Caterpillar's AR app generates an end-to-end view of the factory floor, enabling machine operators to detect tool replacement needs and send instructions for replacement.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -2623,7 +2611,7 @@ window.quizData = [
       {
         id: "10.11_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key feature of a Smart Factory?",
+          "Which of the following is NOT a key feature of a Smart Factory?",
         image_context: null,
         options: [
           { id: "a", text: "Continuous real-time data", image: null },
@@ -2641,7 +2629,7 @@ window.quizData = [
       {
         id: "10.12_2025_IIOT",
         question_text:
-          "Which of the following statements is **INCORRECT** about Fanuc - Zero Downtime System?",
+          "Which of the following statements is INCORRECT about Fanuc - Zero Downtime System?",
         image_context: null,
         options: [
           { id: "a", text: "Is a robot maker", image: null },
@@ -2650,11 +2638,7 @@ window.quizData = [
             text: "Uses predictive maintenance to reduce downtime",
             image: null,
           },
-          {
-            id: "c",
-            text: "Does **not** predict component failure",
-            image: null,
-          },
+          { id: "c", text: "Does not predict component failure", image: null },
           {
             id: "d",
             text: "Performs cloud-based analytics with the help of in-built sensors",
@@ -2805,7 +2789,7 @@ window.quizData = [
       {
         id: "11.4_2025_IIOT",
         question_text:
-          "Which of the following ensures that medical data is **not** accessible by unauthorized users?",
+          "Which of the following ensures that medical data is not accessible by unauthorized users?",
         image_context: null,
         options: [
           { id: "a", text: "Integrity", image: null },
@@ -2903,7 +2887,7 @@ window.quizData = [
       {
         id: "11.8_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a key function of Inventory Management?",
+          "Which of the following is NOT a key function of Inventory Management?",
         image_context: null,
         options: [
           {
@@ -2925,7 +2909,7 @@ window.quizData = [
       {
         id: "11.9_2025_IIOT",
         question_text:
-          "What type of RFID tag has an onboard battery but **no active transmitter**?",
+          "What type of RFID tag has an onboard battery but no active transmitter?",
         image_context: null,
         options: [
           { id: "a", text: "Active RFID Tag", image: null },
@@ -2938,8 +2922,7 @@ window.quizData = [
       },
       {
         id: "11.10_2025_IIOT",
-        question_text:
-          "Which of the following is **NOT** true about RFID tags?",
+        question_text: "Which of the following is NOT true about RFID tags?",
         image_context: null,
         options: [
           {
@@ -2982,7 +2965,7 @@ window.quizData = [
       },
       {
         id: "11.12_2025_IIOT",
-        question_text: "Which of the following is **not** a key feature of AR?",
+        question_text: "Which of the following is not a key feature of AR?",
         image_context: null,
         options: [
           {
@@ -3011,56 +2994,59 @@ window.quizData = [
       },
       {
         id: "11.13_2025_IIOT",
-        question_text:
-          "Which of the following does **not** represent a typical application of analytics in facility management?",
+        question_text: "How does IoT enhance security in facility management?",
         image_context: null,
         options: [
-          { id: "a", text: "Managing energy consumption", image: null },
+          {
+            id: "a",
+            text: "By monitoring alarms, smoke detectors, and life safety systems remotely",
+            image: null,
+          },
           {
             id: "b",
-            text: "Determining exact square-foot utilization of office space",
+            text: "By disconnecting emergency response systems",
             image: null,
           },
           {
             id: "c",
-            text: "Enhancing real-time gameplay in virtual environments",
+            text: "By preventing real-time access to security alerts",
             image: null,
           },
-          { id: "d", text: "Operational cost-optimization", image: null },
+          {
+            id: "d",
+            text: "By limiting surveillance capabilities in buildings",
+            image: null,
+          },
         ],
-        correct_answers: ["c"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "11.14_2025_IIOT",
         question_text:
-          "Which is a key benefit of IoT-based facility management?",
+          "Which of the following is NOT a type of network security?",
         image_context: null,
         options: [
-          { id: "a", text: "Increase unauthorized access", image: null },
-          {
-            id: "b",
-            text: "Real-time tracking and better customer experience",
-            image: null,
-          },
-          { id: "c", text: "Increase all maintenance costs", image: null },
-          { id: "d", text: "Make manual monitoring mandatory", image: null },
+          { id: "a", text: "Intrusion prevention systems", image: null },
+          { id: "b", text: "Firewalls", image: null },
+          { id: "c", text: "Mobile device security", image: null },
+          { id: "d", text: "Manual error tracking", image: null },
         ],
-        correct_answers: ["b"],
+        correct_answers: ["d"],
         type: "Single-Select MCQ",
       },
       {
         id: "11.15_2025_IIOT",
         question_text:
-          "_____ is one of the examples of the IoT-based body temperature monitoring device that takes into account the age, temperature, and symptoms of the patient to provide suggestions for the appropriate medicines or alert doctors.",
+          "Which of the following is NOT a component of an RFID system?",
         image_context: null,
         options: [
-          { id: "a", text: "Kinsa", image: null },
-          { id: "b", text: "Dexcom", image: null },
-          { id: "c", text: "iHealth", image: null },
-          { id: "d", text: "QardioCore", image: null },
+          { id: "a", text: "RFID reader", image: null },
+          { id: "b", text: "Antenna", image: null },
+          { id: "c", text: "Integrated Circuit Card (ICC)", image: null },
+          { id: "d", text: "RFID tag or smart label", image: null },
         ],
-        correct_answers: ["a"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
     ],
@@ -3072,233 +3058,214 @@ window.quizData = [
       {
         id: "12.1_2025_IIOT",
         question_text:
-          "Which of the following is **not** a benefit of using IoT in the oil and gas industry?",
+          "Which of the following is NOT a benefit of IoT in the oil and gas industry?",
         image_context: null,
         options: [
           { id: "a", text: "Improving work safety", image: null },
           { id: "b", text: "Enhancing production efficiency", image: null },
           { id: "c", text: "Eliminating equipment maintenance", image: null },
-          { id: "d", text: "Guarantee unlimited oil reserves", image: null },
+          { id: "d", text: "Saving cost and time", image: null },
         ],
-        correct_answers: ["d"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.2_2025_IIOT",
         question_text:
-          "Which of the following is **not** a direct benefit of predictive maintenance using IoT in chemical industries?",
+          "What is a key application of IoT sensors in the pharmaceutical industry?",
         image_context: null,
         options: [
-          { id: "A", text: "Increase in energy prices", image: null },
-          { id: "B", text: "Reduced equipment breakdown", image: null },
           {
-            id: "C",
-            text: "Improve quality by efficient IoT analytics programs",
+            id: "a",
+            text: "Detecting adverse drug reactions (ADR)",
             image: null,
           },
-          { id: "D", text: "Efficient and effective maintenance", image: null },
+          { id: "b", text: "Eliminate utilization of equipment", image: null },
+          {
+            id: "c",
+            text: "Increasing production costs intentionally",
+            image: null,
+          },
+          {
+            id: "d",
+            text: "Avoiding remote control of equipment",
+            image: null,
+          },
         ],
-        correct_answers: ["A"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.3_2025_IIOT",
         question_text:
-          "Which of the following is **not** a feature of IoT-enabled logistics improvement in the chemical industry?",
+          "Which of the following cannot be achieved by performing condition-based monitoring using IoT?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Ensuring product location using sensors or RFID tags",
+            text: "Predicting quality through continuous monitoring",
             image: null,
           },
-          { id: "b", text: "Tracking assets to prevent loss", image: null },
+          {
+            id: "b",
+            text: "Analytics-based weather prediction and its impact on farming",
+            image: null,
+          },
           {
             id: "c",
-            text: "Detecting contamination or possible attacks",
+            text: "Adjust the amount of required material",
             image: null,
           },
-          {
-            id: "d",
-            text: "Random manual checks without sensor support",
-            image: null,
-          },
+          { id: "d", text: "Eliminating pricing models entirely", image: null },
         ],
         correct_answers: ["d"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.4_2025_IIOT",
-        question_text:
-          "Which of the following best describes condition-based monitoring in IoT-based chemical industries?",
+        question_text: "How does IoT improve logistics for industries?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Predicting quality by continuous monitoring and analyzing factors such as water, nutrients, and pesticides.",
+            text: "Preventing product location tracking with sensors or RFID tags",
             image: null,
           },
           {
             id: "b",
-            text: "Running manual quality inspections once a year.",
+            text: "Ensuring contamination detection and alert notifications",
             image: null,
           },
           {
             id: "c",
-            text: "Ignoring environmental factors like weather and focusing only on sales data.",
+            text: "Avoiding warehouse monitoring altogether",
             image: null,
           },
           {
             id: "d",
-            text: "Setting random pricing models without data-driven insights.",
+            text: "Ignoring asset tracking to prevent loss",
             image: null,
           },
         ],
-        correct_answers: ["a"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.5_2025_IIOT",
         question_text:
-          "Which of the following is a way IoT helps minimize supply chain risks in the chemical industry?",
+          "How does IoT contribute to reducing energy expenses in industries?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Conducting only annual manual audits of warehouses",
+            text: "By analyzing real-time data to identify inefficiencies",
             image: null,
           },
           {
             id: "b",
-            text: "Real-time monitoring of equipment, materials, processes, environment, and workers",
+            text: "By increasing regulatory control burdens",
             image: null,
           },
-          {
-            id: "c",
-            text: "Ignoring process data and focusing only on final product delivery",
-            image: null,
-          },
+          { id: "c", text: "By avoiding usage pattern analysis", image: null },
           {
             id: "d",
-            text: "Depending solely on human inspections without sensors",
+            text: "By ignoring energy usage optimization",
             image: null,
           },
         ],
-        correct_answers: ["b"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.6_2025_IIOT",
         question_text:
-          "What function does the IoT play in the pharmaceutical industry related to drug safety?",
+          "Which of the following can be achieved by using IoT in the chemical industry?",
         image_context: null,
         options: [
-          { id: "A", text: "Automated surgery", image: null },
-          { id: "B", text: "Developing vaccines", image: null },
-          {
-            id: "C",
-            text: "Detecting adverse drug reactions and allergens",
-            image: null,
-          },
-          { id: "D", text: "Building hospital infrastructure", image: null },
+          { id: "a", text: "Reduction in Energy Expenses", image: null },
+          { id: "b", text: "Predictive Maintenance", image: null },
+          { id: "c", text: "Improve Logistics", image: null },
+          { id: "d", text: "All of these", image: null },
         ],
-        correct_answers: ["C"],
-        type: "Single-Select MCQ",
+        correct_answers: ["d"],
+        type: "Multi-Select MCQ",
       },
       {
         id: "12.7_2025_IIOT",
         question_text:
-          "Which of the following represents the key features of sixth-generation drone technology?",
+          "Which generation of UAVs introduced transformable designs, 1080 HD video, and three-axis gimbals?",
         image_context: null,
         options: [
-          {
-            id: "A",
-            text: "Platform and payload adaptability, automated safety modes, intelligent piloting models and full autonomy, airspace awareness",
-            image: null,
-          },
-          {
-            id: "B",
-            text: "Manual flight control with static camera mount and basic video recording",
-            image: null,
-          },
-          {
-            id: "C",
-            text: "Single-axis gimbal with limited flight time and analog signal transmission",
-            image: null,
-          },
-          {
-            id: "D",
-            text: "Pre-programmed routes with no adaptability and no safety protocols",
-            image: null,
-          },
+          { id: "a", text: "Second Generation", image: null },
+          { id: "b", text: "Fourth Generation", image: null },
+          { id: "c", text: "Fifth Generation", image: null },
+          { id: "d", text: "Sixth Generation", image: null },
         ],
-        correct_answers: ["A"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.8_2025_IIOT",
-        question_text:
-          "Statement: UAV-based light displays are generally more expensive than traditional firework displays and **cannot** be reused.",
+        question_text: "How do UAVs help in the mining industry?",
         image_context: null,
         options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
+          { id: "a", text: "Digging entire tunnels", image: null },
+          {
+            id: "b",
+            text: "Managing stockpiles and grading control",
+            image: null,
+          },
+          { id: "c", text: "Operating drilling machinery", image: null },
+          { id: "d", text: "Refining extracted minerals", image: null },
         ],
         correct_answers: ["b"],
-        type: "True/False",
+        type: "Single-Select MCQ",
       },
       {
         id: "12.9_2025_IIOT",
-        question_text:
-          "How are UAVs primarily used in precision forestry applications?",
+        question_text: "How do UAVs help in agriculture?",
         image_context: null,
         options: [
-          { id: "A", text: "To increase lumber pricing", image: null },
           {
-            id: "B",
-            text: "To measure canopy height, density and volume estimation",
+            id: "a",
+            text: "Monitor crop stress factors like over-fertilization or drought",
             image: null,
           },
-          { id: "C", text: "To stop monitoring wild life", image: null },
-          {
-            id: "D",
-            text: "To increase cost of forest maintanace",
-            image: null,
-          },
+          { id: "b", text: "Reduce human labor completely", image: null },
+          { id: "c", text: "Eliminate the need for fertilizers", image: null },
+          { id: "d", text: "Increase soil erosion", image: null },
         ],
-        correct_answers: ["B"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.10_2025_IIOT",
         question_text:
-          "Statement: One of the applications of UAVs in telecommunication is to perform tower inspection.",
-        image_context: null,
-        options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
-        ],
-        correct_answers: ["a"],
-        type: "True/False",
-      },
-      {
-        id: "12.11_2025_IIOT",
-        question_text:
-          "Which of the following is an application of UAVs in delivery and healthcare?",
+          "What is a major advantage(s) of UAVs in telecommunication?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Transporting blood samples to laboratories",
+            text: "Monitor towers from any angle and height",
             image: null,
           },
-          {
-            id: "b",
-            text: "Conducting remote surgeries inside hospitals",
-            image: null,
-          },
-          { id: "c", text: "Manufacturing medical syringes", image: null },
-          { id: "d", text: "Hiring doctors for clinics", image: null },
+          { id: "b", text: "Covers wide areas with less cost", image: null },
+          { id: "c", text: "Broadcasting live events", image: null },
+          { id: "d", text: "All of these", image: null },
+        ],
+        correct_answers: ["d"],
+        type: "Multi-Select MCQ",
+      },
+      {
+        id: "12.11_2025_IIOT",
+        question_text:
+          "Which of the following is most suitable for scanning a huge number of items in a warehouse, checking the missing items, and monitoring full inventory?",
+        image_context: null,
+        options: [
+          { id: "a", text: "Unmanned Aerial Vehicle (UAV)", image: null },
+          { id: "b", text: "Automated Guided Vehicle (AGV)", image: null },
+          { id: "c", text: "Autonomous Underwater Vehicle (AUV)", image: null },
+          { id: "d", text: "Segway", image: null },
         ],
         correct_answers: ["a"],
         type: "Single-Select MCQ",
@@ -3306,43 +3273,35 @@ window.quizData = [
       {
         id: "12.12_2025_IIOT",
         question_text:
-          "Which of the following activities can be performed by using UAVs in the mining?",
+          "Which generation of UAVs introduced transformable designs with $360^{\\circ}$ gimbals and high-quality video instrumentation?",
         image_context: null,
         options: [
-          {
-            id: "a",
-            text: "Regular surface survey for optimized blast design",
-            image: null,
-          },
-          { id: "b", text: "Manage stockpiles", image: null },
-          { id: "c", text: "Site exploration", image: null },
-          { id: "d", text: "All of these", image: null },
+          { id: "a", text: "Third Generation", image: null },
+          { id: "b", text: "Fourth Generation", image: null },
+          { id: "c", text: "Fifth Generation", image: null },
+          { id: "d", text: "Sixth Generation", image: null },
         ],
-        correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        correct_answers: ["c"],
+        type: "Single-Select MCQ",
       },
       {
         id: "12.13_2025_IIOT",
         question_text:
-          "Which of the following is **not** a reason why case studies are necessary?",
+          "Which of the following is NOT an application of UAVs in forestry?",
         image_context: null,
         options: [
           {
             id: "a",
-            text: "Provide in-depth knowledge and clarity",
-            image: null,
-          },
-          { id: "b", text: "Explore real-life phenomena", image: null },
-          {
-            id: "c",
-            text: "Enable detailed quantitative and qualitative analysis",
+            text: "Conducting forestry surveys to show information about forest species, including the humans around the forest",
             image: null,
           },
           {
-            id: "d",
-            text: "Guarantee faster industrial automation by themselves",
+            id: "b",
+            text: "Precision forestry and canopy mapping for measuring canopy height, density, and volume estimation",
             image: null,
           },
+          { id: "c", text: "Tracking wildland fires", image: null },
+          { id: "d", text: "Eradicating endangered species", image: null },
         ],
         correct_answers: ["d"],
         type: "Single-Select MCQ",
@@ -3350,28 +3309,42 @@ window.quizData = [
       {
         id: "12.14_2025_IIOT",
         question_text:
-          "Which of the following is **not** typically part of a case study subject matter?",
+          "What is one of the primary applications of UAVs in construction sites?",
         image_context: null,
         options: [
-          { id: "a", text: "A small geographical area", image: null },
-          { id: "b", text: "A limited number of individuals", image: null },
-          { id: "c", text: "National-level government policies", image: null },
-          { id: "d", text: "Real-life related events", image: null },
+          { id: "a", text: "Painting buildings", image: null },
+          { id: "b", text: "Monitoring job sites", image: null },
+          { id: "c", text: "Replacing construction workers", image: null },
+          {
+            id: "d",
+            text: "Manufacturing construction materials",
+            image: null,
+          },
         ],
-        correct_answers: ["c"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.15_2025_IIOT",
         question_text:
-          "Statement: Almost all mining industries rely on conveyer-belt based systems for loading/unloading of mined materials.",
+          "Which of the following is/are FALSE about the necessity of case studies?",
         image_context: null,
         options: [
-          { id: "a", text: "True", image: null },
-          { id: "b", text: "False", image: null },
+          {
+            id: "a",
+            text: "The case study investigates real-life phenomena through a detailed analysis of related events.",
+            image: null,
+          },
+          {
+            id: "b",
+            text: "The case study generally selects a vast geographical area or a large number of individuals as the subject matter.",
+            image: null,
+          },
+          { id: "c", text: "Both (a) and (b)", image: null },
+          { id: "d", text: "Neither (a) nor (b)", image: null },
         ],
-        correct_answers: ["a"],
-        type: "True/False",
+        correct_answers: ["b"],
+        type: "Single-Select MCQ",
       },
     ],
   },

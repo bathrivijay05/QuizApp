@@ -1,4 +1,5 @@
 window.quizData = [
+  // Week 1
   {
     assignment: "Assignment 1",
     week: 1,
@@ -20,7 +21,7 @@ window.quizData = [
       {
         id: "1.2_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a correct example of a transducer?",
+          "Which of the following is NOT a correct example of a transducer?",
         image_context: null,
         options: [
           { id: "a", text: "Microphone", image: null },
@@ -165,8 +166,7 @@ window.quizData = [
       },
       {
         id: "1.12_2025_IIOT",
-        question_text:
-          "Which of the following is **not** a message type in CoAP?",
+        question_text: "Which of the following is not a message type in CoAP?",
         image_context: null,
         options: [
           { id: "a", text: "CON", image: null },
@@ -194,7 +194,7 @@ window.quizData = [
       {
         id: "1.14_2025_IIOT",
         question_text:
-          "Statement: Sensor calibration is typically used for weeding-out repeatable errors in sensor readings.",
+          "State true or false. Sensor calibration is typically used for weeding-out repeatable errors in sensor readings.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -206,13 +206,13 @@ window.quizData = [
       {
         id: "1.15_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** true about Wireless HART?",
+          "Which of the following is NOT true about Wireless HART?",
         image_context: null,
         options: [
           { id: "a", text: "It is a license-free protocol", image: null },
           {
             id: "b",
-            text: "It is **not** compatible with any legacy devices",
+            text: "It is not compatible with any legacy devices",
             image: null,
           },
           {
@@ -231,6 +231,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 2
   {
     assignment: "Assignment 2",
     week: 2,
@@ -278,7 +280,7 @@ window.quizData = [
       {
         id: "2.3_2025_IIOT",
         question_text:
-          "A depression, compared to a recession, is characterized by _______.",
+          "Fill in the blanks. A depression, compared to a recession, is characterized by",
         image_context: null,
         options: [
           {
@@ -322,7 +324,7 @@ window.quizData = [
       {
         id: "2.5_2025_IIOT",
         question_text:
-          "Emerging markets are expected to be found primarily in _______.",
+          "Fill in the blanks. Emerging markets are expected to be found primarily in",
         image_context: null,
         options: [
           { id: "a", text: "Developed countries", image: null },
@@ -421,12 +423,12 @@ window.quizData = [
           { id: "d", text: "All of these", image: null },
         ],
         correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        type: "Single-Select MCQ",
       },
       {
         id: "2.11_2025_IIOT",
         question_text:
-          "Big Data analytics in smart factories can help with _______.",
+          "Fill in the blanks. Big Data analytics in smart factories can help with",
         image_context: null,
         options: [
           { id: "a", text: "Generating knowledge", image: null },
@@ -470,7 +472,7 @@ window.quizData = [
       {
         id: "2.13_2025_IIOT",
         question_text:
-          "Statement: Smart Grid is considered as a supporting technology for Smart Factories.",
+          "State True or False. Smart Grid is considered as a supporting technology for Smart Factories.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -496,7 +498,7 @@ window.quizData = [
       {
         id: "2.15_2025_IIOT",
         question_text:
-          "Statement: Industry 4.0 is commonly referred to as the fourth industrial revolution pertaining to digitization in the manufacturing industry.",
+          "State True or False. Industry 4.0 is commonly referred to as the fourth industrial revolution pertaining to digitization in the manufacturing industry.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -507,6 +509,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 3
   {
     assignment: "Assignment 3",
     week: 3,
@@ -536,7 +540,7 @@ window.quizData = [
       {
         id: "3.2_2025_IIOT",
         question_text:
-          "Reactive Computation, as a feature of Cyber-Physical Systems, primarily involves _______.",
+          "Fill in the blanks. Reactive Computation, as a feature of Cyber-Physical Systems, primarily involves",
         image_context: null,
         options: [
           {
@@ -697,8 +701,7 @@ window.quizData = [
       },
       {
         id: "3.9_2025_IIOT",
-        question_text:
-          "Which of the following is **NOT** listed as a scope of AI?",
+        question_text: "Which of the following is NOT listed as a scope of AI?",
         image_context: null,
         options: [
           { id: "a", text: "Games", image: null },
@@ -712,7 +715,7 @@ window.quizData = [
       {
         id: "3.10_2025_IIOT",
         question_text:
-          "Which of the following is listed as a challenge of AI in IIoT?",
+          "Which of the following is listed as a challenge of AI in IIOT?",
         image_context: null,
         options: [
           { id: "a", text: "Increasing efficiency", image: null },
@@ -754,7 +757,7 @@ window.quizData = [
       {
         id: "3.13_2025_IIOT",
         question_text:
-          "Why are traditional Data Warehouse (DW) architectures generally **not** suitable for Big Data applications?",
+          "Why are traditional Data Warehouse (DW) architectures generally not suitable for Big Data applications?",
         image_context: null,
         options: [
           {
@@ -784,7 +787,7 @@ window.quizData = [
       {
         id: "3.14_2025_IIOT",
         question_text:
-          "_______ acts as the interface for the different applications during the entire lifecycle management of the product.",
+          "Fill in the blanks. ______ acts as the interface for the different applications during the entire lifecycle management of the product.",
         image_context: null,
         options: [
           { id: "a", text: "Product Lifecycle Management", image: null },
@@ -798,7 +801,7 @@ window.quizData = [
       {
         id: "3.15_2025_IIOT",
         question_text:
-          "Which of the following statements is _______ about Big Data?",
+          "Which of the following statements is incorrect about Big Data?",
         image_context: null,
         options: [
           {
@@ -808,7 +811,7 @@ window.quizData = [
           },
           {
             id: "b",
-            text: "Big data consists _______ of structured datasets generated by IoT applications.",
+            text: "Big data consists only of structured datasets generated by IoT applications.",
             image: null,
           },
           {
@@ -827,6 +830,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 4
   {
     assignment: "Assignment 4",
     week: 4,
@@ -1024,7 +1029,7 @@ window.quizData = [
       {
         id: "4.11_2025_IIOT",
         question_text:
-          "Thames Water's smart water management system, as an example of Industrial Process 4.0 operation efficiency, primarily benefits from _______.",
+          "Fill in the blanks. Thames Water's smart water management system, as an example of Industrial Process 4.0 operation efficiency, primarily benefits from",
         image_context: null,
         options: [
           {
@@ -1054,7 +1059,7 @@ window.quizData = [
       {
         id: "4.12_2025_IIOT",
         question_text:
-          "Interoperability in the design philosophy of IIoT for Industrial Processes refers to _______.",
+          "Fill in the blanks. Interoperability in the design philosophy of IIoT for Industrial Processes refers to",
         image_context: null,
         options: [
           {
@@ -1106,7 +1111,7 @@ window.quizData = [
       {
         id: "4.14_2025_IIOT",
         question_text:
-          "Statement: In the case of spear phishing, the attackers send thousands of deceitful emails that resemble actual emails from credible sources while email phishing attacks are targeted to a specific person or organization to obtain sensitive information.",
+          "State true or false. In the case of spear phishing, the attackers send thousands of deceitful emails that resemble actual emails from credible sources while email phishing attacks are targeted to a specific person or organization to obtain sensitive information.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1118,7 +1123,7 @@ window.quizData = [
       {
         id: "4.15_2025_IIOT",
         question_text:
-          "Which of the following statements is _______ about the CIA triad in network and computer system security?",
+          "Which of the following statements is incorrect about the CIA triad in network and computer system security?",
         image_context: null,
         options: [
           {
@@ -1128,7 +1133,7 @@ window.quizData = [
           },
           {
             id: "b",
-            text: "Integrity refers to maintaining the accuracy and consistency of data, and can _______ be violated by intentional attacks.",
+            text: "Integrity refers to maintaining the accuracy and consistency of data, and can always be violated by intentional attacks.",
             image: null,
           },
           {
@@ -1143,6 +1148,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 5
   {
     assignment: "Assignment 5",
     week: 5,
@@ -1389,12 +1396,12 @@ window.quizData = [
           { id: "d", text: "All of these", image: null },
         ],
         correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        type: "Single-Select MCQ",
       },
       {
         id: "5.15_2025_IIOT",
         question_text:
-          "_______ is an electrical framework that provides two-way communication between the consumers and suppliers.",
+          "Fill in the blanks. ______ is an electrical framework that provides two-way communication between the consumers and suppliers. With the help of smart meters, smart appliances, and energy-efficient resources, it efficiently delivers electricity to the consumers.",
         image_context: null,
         options: [
           { id: "a", text: "Smart grid", image: null },
@@ -1407,6 +1414,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 6
   {
     assignment: "Assignment 6",
     week: 6,
@@ -1608,7 +1617,7 @@ window.quizData = [
         options: [
           { id: "a", text: "90% availability", image: null },
           { id: "b", text: "99% availability", image: null },
-          { id: "c", text: "99.9999% availability (6-nines)", image: null },
+          { id: "c", text: "$99.9999%$ availability (6-nines)", image: null },
           { id: "d", text: "50% availability", image: null },
         ],
         correct_answers: ["c"],
@@ -1620,10 +1629,10 @@ window.quizData = [
           "What is the end-to-end round trip latency supported by the Tactile Internet?",
         image_context: null,
         options: [
-          { id: "a", text: "< 10 ms", image: null },
-          { id: "b", text: "< 1 ms", image: null },
-          { id: "c", text: "< 100 ms", image: null },
-          { id: "d", text: "< 250 ms", image: null },
+          { id: "a", text: "$< 10$ ms", image: null },
+          { id: "b", text: "$< 1$ ms", image: null },
+          { id: "c", text: "$< 100$ ms", image: null },
+          { id: "d", text: "$< 250$ ms", image: null },
         ],
         correct_answers: ["b"],
         type: "Single-Select MCQ",
@@ -1648,7 +1657,7 @@ window.quizData = [
       {
         id: "6.14_2025_IIOT",
         question_text:
-          "Statement: The PROFINet protocol handles data transmission of large packets between PLCs and PCs, as well as enable integration with the Internet and Intranet through Ethernet.",
+          "State true or false. The PROFINet protocol handles data transmission of large packets between PLCs and PCs, as well as enable integration with the Internet and Intranet through Ethernet.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -1660,7 +1669,7 @@ window.quizData = [
       {
         id: "6.15_2025_IIOT",
         question_text:
-          "DeviceNet was designed by Rockwell Automation to enable communications between _______ and _______.",
+          "Fill in the blanks. DeviceNet was designed by Rockwell Automation to enable communications between ______, and ______.",
         image_context: null,
         options: [
           { id: "a", text: "PLCs, field devices", image: null },
@@ -1677,6 +1686,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 7
   {
     assignment: "Assignment 7",
     week: 7,
@@ -1697,7 +1708,7 @@ window.quizData = [
       {
         id: "7.2_2025_IIOT",
         question_text:
-          "SIGFOX network give a performance of upto _______ messages per day with a payload of _______ bytes per message.",
+          "Fill in the blanks. SIGFOX network give a performance of upto ______ messages per day with a payload of ______ bytes per message.",
         image_context: null,
         options: [
           { id: "a", text: "140, 12", image: null },
@@ -1917,7 +1928,7 @@ window.quizData = [
       {
         id: "7.13_2025_IIOT",
         question_text:
-          "Programmable Logic Controllers (PLCs) comprises of _______.",
+          "Fill in the blanks. Programmable Logic Controllers (PLCs) comprises of",
         image_context: null,
         options: [
           {
@@ -1987,7 +1998,7 @@ window.quizData = [
           },
           {
             id: "b",
-            text: "It enables real-time remote monitoring and control of industrial processes using sensors and actuators, with data visualization through HMI.",
+            text: "It enables real-time remote monitoring and control of industrial processes using sensors and actuators, with data visualization through HΜΙ.",
             image: null,
           },
           {
@@ -2006,6 +2017,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 8
   {
     assignment: "Assignment 8",
     week: 8,
@@ -2179,7 +2192,7 @@ window.quizData = [
       {
         id: "8.9_2025_IIOT",
         question_text:
-          "Which of the following statements about MindSphere is _______?",
+          "Which of the following statements about MindSphere is false?",
         image_context: null,
         options: [
           {
@@ -2267,7 +2280,7 @@ window.quizData = [
       {
         id: "8.13_2025_IIOT",
         question_text:
-          "Which of the following represents the characteristics of a good SLA? _______.",
+          "Which of the following represents the characteristics of a good SLA?",
         image_context: null,
         options: [
           { id: "a", text: "Affordable", image: null },
@@ -2276,12 +2289,12 @@ window.quizData = [
           { id: "d", text: "All of these", image: null },
         ],
         correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        type: "Single-Select MCQ",
       },
       {
         id: "8.14_2025_IIOT",
         question_text:
-          "Statement: Based on the application type, two popular types of deep learning methods are convolutional neural networks (CNNs) and recurrent neural networks (RNNs).",
+          "State true or false. Based on the application type, two popular types of deep learning methods are convolutional neural networks (CNNs) and recurrent neural networks (RNNs).",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -2322,6 +2335,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 9
   {
     assignment: "Assignment 9",
     week: 9,
@@ -2350,8 +2365,7 @@ window.quizData = [
       },
       {
         id: "9.2_2025_IIOT",
-        question_text:
-          "Which of the following is **not** a fog platform provider?",
+        question_text: "Which of the following is not a fog platform provider?",
         image_context: null,
         options: [
           { id: "a", text: "FogHorn", image: null },
@@ -2379,7 +2393,7 @@ window.quizData = [
       {
         id: "9.4_2025_IIOT",
         question_text:
-          "What is the result of the following expression in R programming, if N is a vector containing integers from 1 to 10? `15 %in% N`",
+          "What is the result of the following expression in R programming, if N is a vector containing integers from 1 to 10? 15 %in% N",
         image_context: null,
         options: [
           { id: "a", text: "TRUE", image: null },
@@ -2393,7 +2407,7 @@ window.quizData = [
       {
         id: "9.5_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a data structure in Julia programming?",
+          "Which of the following is NOT a data structure in Julia programming?",
         image_context: null,
         options: [
           { id: "a", text: "Tuples", image: null },
@@ -2407,7 +2421,7 @@ window.quizData = [
       {
         id: "9.6_2025_IIOT",
         question_text:
-          "Which of the following does **NOT** fall under the essential characteristics of cloud computing according to NIST?",
+          "Which of the following does NOT fall under the essential characteristics of cloud computing according to NIST?",
         image_context: null,
         options: [
           { id: "a", text: "On-demand self-service", image: null },
@@ -2421,7 +2435,7 @@ window.quizData = [
       {
         id: "9.7_2025_IIOT",
         question_text:
-          "Which of the following does **NOT** represent a NoSQL database?",
+          "Which of the following does NOT represent a NoSQL database?",
         image_context: null,
         options: [
           { id: "a", text: "Key-value databases", image: null },
@@ -2435,7 +2449,7 @@ window.quizData = [
       {
         id: "9.8_2025_IIOT",
         question_text:
-          "Statement: In Hadoop Distributed File System (HDFS), the Namenode stores the actual data blocks, while Datanodes maintain the metadata information about the files.",
+          "State true or false. In Hadoop Distributed File System (HDFS), the Namenode stores the actual data blocks, while Datanodes maintain the metadata information about the files.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -2592,6 +2606,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 10
   {
     assignment: "Assignment 10",
     week: 10,
@@ -2599,7 +2615,7 @@ window.quizData = [
       {
         id: "10.1_2025_IIOT",
         question_text:
-          "Statement: The main role of µSDN in the SD-6TiSCH protocol stack is to minimize control overhead.",
+          "State true or false. The main role of $\\mu$SDN in the SD-6TiSCH protocol stack is to minimize control overhead.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -2684,7 +2700,7 @@ window.quizData = [
       {
         id: "10.5_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a security requirement for Cloud Complied IIoT?",
+          "Which of the following is NOT a security requirement for Cloud Complied IIoT?",
         image_context: null,
         options: [
           {
@@ -2714,7 +2730,7 @@ window.quizData = [
       {
         id: "10.6_2025_IIOT",
         question_text:
-          "Which of the following statements is _______ about the protection of fog devices in IIoT?",
+          "Which of the following statements is incorrect about the protection of fog devices in IIoT?",
         image_context: null,
         options: [
           {
@@ -2758,7 +2774,7 @@ window.quizData = [
       {
         id: "10.8_2025_IIOT",
         question_text:
-          "Which of the following is _______ about the security requirements in Healthcare IoT?",
+          "Which of the following is incorrect about the security requirements in Healthcare IoT?",
         image_context: null,
         options: [
           {
@@ -2802,7 +2818,7 @@ window.quizData = [
       {
         id: "10.10_2025_IIOT",
         question_text:
-          "Which of the following is **NOT** a feature of a Smart Factory?",
+          "Which of the following is NOT a feature of a Smart Factory?",
         image_context: null,
         options: [
           { id: "a", text: "Continuous real-time data", image: null },
@@ -2819,7 +2835,8 @@ window.quizData = [
       },
       {
         id: "10.11_2025_IIOT",
-        question_text: "The YuMi initiative by ABB focuses on _______.",
+        question_text:
+          "Fill in the blanks. The YuMi initiative by ABB focuses on",
         image_context: null,
         options: [
           {
@@ -2884,7 +2901,7 @@ window.quizData = [
       {
         id: "10.14_2025_IIOT",
         question_text:
-          "The BioRanger device developed by Diagenetix is primarily used for _______.",
+          "Fill in the blanks. The BioRanger device developed by Diagenetix is primarily used for",
         image_context: null,
         options: [
           { id: "a", text: "Monitoring livestock health", image: null },
@@ -2902,7 +2919,7 @@ window.quizData = [
       {
         id: "10.15_2025_IIOT",
         question_text:
-          "Statement: SCADA is a system of hardware and software components, which enable remote control, monitoring, and maintenance of local and remote industrial processes in real-time.",
+          "State true or false. SCADA is a system of hardware and software components, which enable remote control, monitoring, and maintenance of local and remote industrial processes in real-time.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -2913,13 +2930,15 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 11
   {
     assignment: "Assignment 11",
     week: 11,
     questions: [
       {
         id: "11.1_2025_IIOT",
-        question_text: "What is the utility of Dexcom? _______.",
+        question_text: "What is the utility of Dexcom?",
         image_context: null,
         options: [
           {
@@ -2949,21 +2968,21 @@ window.quizData = [
       {
         id: "11.2_2025_IIOT",
         question_text:
-          "Which of the following represents an IoT-based blood pressure monitoring system? _______.",
+          "Which of the following represents an IoT-based blood pressure monitoring system?",
         image_context: null,
         options: [
-          { id: "A", text: "iHealth BP5", image: null },
-          { id: "B", text: "Manual mercury sphygmomanometer", image: null },
-          { id: "C", text: "Analog wrist blood pressure cuff", image: null },
-          { id: "D", text: "Traditional glass thermometer", image: null },
+          { id: "a", text: "iHealth BP5", image: null },
+          { id: "b", text: "Manual mercury sphygmomanometer", image: null },
+          { id: "c", text: "Analog wrist blood pressure cuff", image: null },
+          { id: "d", text: "Traditional glass thermometer", image: null },
         ],
-        correct_answers: ["A"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "11.3_2025_IIOT",
         question_text:
-          "Which of the following is a key security requirement in IIoT healthcare? _______.",
+          "Which of the following is a key security requirement in IIoT healthcare?",
         image_context: null,
         options: [
           {
@@ -2989,7 +3008,7 @@ window.quizData = [
       {
         id: "11.4_2025_IIOT",
         question_text:
-          "What is a major benefit of a digital power plant using IIoT? _______.",
+          "What is a major benefit of a digital power plant using IIoT?",
         image_context: null,
         options: [
           { id: "a", text: "More human supervision", image: null },
@@ -3007,7 +3026,7 @@ window.quizData = [
       {
         id: "11.5_2025_IIOT",
         question_text:
-          "Which network is primarily used for in-home IoT devices in a smart grid? _______.",
+          "Which network is primarily used for in-home IoT devices in a smart grid?",
         image_context: null,
         options: [
           { id: "a", text: "Wide Area Network (WAN)", image: null },
@@ -3021,7 +3040,7 @@ window.quizData = [
       {
         id: "11.6_2025_IIOT",
         question_text:
-          "Which component of the Advanced Metering Infrastructure (AMI) is responsible for analyzing the collected data? _______.",
+          "Which component of the Advanced Metering Infrastructure (AMI) is responsible for analyzing the collected data?",
         image_context: null,
         options: [
           { id: "a", text: "Smart meters", image: null },
@@ -3035,7 +3054,7 @@ window.quizData = [
       {
         id: "11.7_2025_IIOT",
         question_text:
-          "What type of RFID tag has an onboard battery but _______? _______.",
+          "What type of RFID tag has an onboard battery but no active transmitter?",
         image_context: null,
         options: [
           { id: "a", text: "Passive", image: null },
@@ -3063,7 +3082,7 @@ window.quizData = [
       {
         id: "11.9_2025_IIOT",
         question_text:
-          "Which of the following is a major limitation of barcodes compared to RFID tags? _______.",
+          "Which of the following is a major limitation of barcodes compared to RFID tags?",
         image_context: null,
         options: [
           { id: "a", text: "Vulnerable to forgery", image: null },
@@ -3072,7 +3091,7 @@ window.quizData = [
           { id: "d", text: "All of these", image: null },
         ],
         correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        type: "Single-Select MCQ",
       },
       {
         id: "11.10_2025_IIOT",
@@ -3102,8 +3121,7 @@ window.quizData = [
       },
       {
         id: "11.11_2025_IIOT",
-        question_text:
-          'What does "Integrity" in software security ensure? _______.',
+        question_text: 'What does "Integrity" in software security ensure?',
         image_context: null,
         options: [
           {
@@ -3177,7 +3195,7 @@ window.quizData = [
       {
         id: "11.14_2025_IIOT",
         question_text:
-          "Which is a key benefit of IoT-based facility management? _______.",
+          "Which is a key benefit of IoT-based facility management?",
         image_context: null,
         options: [
           { id: "a", text: "Increase unauthorized access", image: null },
@@ -3195,7 +3213,7 @@ window.quizData = [
       {
         id: "11.15_2025_IIOT",
         question_text:
-          "_______ is one of the examples of the IoT-based body temperature monitoring device that takes into account the age, temperature, and symptoms of the patient to provide suggestions for the appropriate medicines or alert doctors.",
+          "Fill in the blanks. ______ is one of the examples of the IoT-based body temperature monitoring device that takes into account the age, temperature, and symptoms of the patient to provide suggestions for the appropriate medicines or alert doctors.",
         image_context: null,
         options: [
           { id: "a", text: "Kinsa", image: null },
@@ -3208,6 +3226,8 @@ window.quizData = [
       },
     ],
   },
+
+  // Week 12
   {
     assignment: "Assignment 12",
     week: 12,
@@ -3232,16 +3252,16 @@ window.quizData = [
           "Which of the following is not a direct benefit of predictive maintenance using IoT in chemical industries?",
         image_context: null,
         options: [
-          { id: "A", text: "Increase in energy prices", image: null },
-          { id: "B", text: "Reduced equipment breakdown", image: null },
+          { id: "a", text: "Increase in energy prices", image: null },
+          { id: "b", text: "Reduced equipment breakdown", image: null },
           {
-            id: "C",
+            id: "c",
             text: "Improve quality by efficient IoT analytics programs",
             image: null,
           },
-          { id: "D", text: "Efficient and effective maintenance", image: null },
+          { id: "d", text: "Efficient and effective maintenance", image: null },
         ],
-        correct_answers: ["A"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
@@ -3273,7 +3293,7 @@ window.quizData = [
       {
         id: "12.4_2025_IIOT",
         question_text:
-          "Which of the following best describes condition-based monitoring in IoT-based chemical industries? _______.",
+          "Which of the following best describes condition-based monitoring in IoT-based chemical industries?",
         image_context: null,
         options: [
           {
@@ -3303,7 +3323,7 @@ window.quizData = [
       {
         id: "12.5_2025_IIOT",
         question_text:
-          "Which of the following is a way IoT helps minimize supply chain risks in the chemical industry? _______.",
+          "Which of the following is a way IoT helps minimize supply chain risks in the chemical industry?",
         image_context: null,
         options: [
           {
@@ -3333,55 +3353,55 @@ window.quizData = [
       {
         id: "12.6_2025_IIOT",
         question_text:
-          "What function does the IoT play in the pharmaceutical industry related to drug safety? _______.",
+          "What function does the IoT play in the pharmaceutical industry related to drug safety?",
         image_context: null,
         options: [
-          { id: "A", text: "Automated surgery", image: null },
-          { id: "B", text: "Developing vaccines", image: null },
+          { id: "a", text: "Automated surgery", image: null },
+          { id: "b", text: "Developing vaccines", image: null },
           {
-            id: "C",
+            id: "c",
             text: "Detecting adverse drug reactions and allergens",
             image: null,
           },
-          { id: "D", text: "Building hospital infrastructure", image: null },
+          { id: "d", text: "Building hospital infrastructure", image: null },
         ],
-        correct_answers: ["C"],
+        correct_answers: ["c"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.7_2025_IIOT",
         question_text:
-          "Which of the following represents the key features of sixth-generation drone technology? _______.",
+          "Which of the following represents the key features of sixth-generation drone technology?",
         image_context: null,
         options: [
           {
-            id: "A",
+            id: "a",
             text: "Platform and payload adaptability, automated safety modes, intelligent piloting models and full autonomy, airspace awareness",
             image: null,
           },
           {
-            id: "B",
+            id: "b",
             text: "Manual flight control with static camera mount and basic video recording",
             image: null,
           },
           {
-            id: "C",
+            id: "c",
             text: "Single-axis gimbal with limited flight time and analog signal transmission",
             image: null,
           },
           {
-            id: "D",
+            id: "d",
             text: "Pre-programmed routes with no adaptability and no safety protocols",
             image: null,
           },
         ],
-        correct_answers: ["A"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.8_2025_IIOT",
         question_text:
-          "Statement: UAV-based light displays are generally more expensive than traditional firework displays and _______ be reused.",
+          "State true or false - UAV-based light displays are generally more expensive than traditional firework displays and cannot be reused.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -3393,29 +3413,29 @@ window.quizData = [
       {
         id: "12.9_2025_IIOT",
         question_text:
-          "How are UAVs primarily used in precision forestry applications? _______.",
+          "How are UAVs primarily used in precision forestry applications?",
         image_context: null,
         options: [
-          { id: "A", text: "To increase lumber pricing", image: null },
+          { id: "a", text: "To increase lumber pricing", image: null },
           {
-            id: "B",
+            id: "b",
             text: "To measure canopy height, density and volume estimation",
             image: null,
           },
-          { id: "C", text: "To stop monitoring wild life", image: null },
+          { id: "c", text: "To stop monitoring wild life", image: null },
           {
-            id: "D",
+            id: "d",
             text: "To increase cost of forest maintanace",
             image: null,
           },
         ],
-        correct_answers: ["B"],
+        correct_answers: ["b"],
         type: "Single-Select MCQ",
       },
       {
         id: "12.10_2025_IIOT",
         question_text:
-          "Statement: One of the applications of UAVs in telecommunication is to perform tower inspection.",
+          "State true or false. One of the applications of UAVs in telecommunication is to perform tower inspection.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
@@ -3427,7 +3447,7 @@ window.quizData = [
       {
         id: "12.11_2025_IIOT",
         question_text:
-          "Which of the following is an application of UAVs in delivery and healthcare? _______.",
+          "Which of the following is an application of UAVs in delivery and healthcare?",
         image_context: null,
         options: [
           {
@@ -3449,7 +3469,7 @@ window.quizData = [
       {
         id: "12.12_2025_IIOT",
         question_text:
-          "Which of the following activities can be performed by using UAVs in the mining? _______.",
+          "Which of the following activities can be performed by using UAVs in the mining?",
         image_context: null,
         options: [
           {
@@ -3462,7 +3482,7 @@ window.quizData = [
           { id: "d", text: "All of these", image: null },
         ],
         correct_answers: ["d"],
-        type: "Multi-Select MCQ",
+        type: "Single-Select MCQ",
       },
       {
         id: "12.13_2025_IIOT",
@@ -3507,7 +3527,7 @@ window.quizData = [
       {
         id: "12.15_2025_IIOT",
         question_text:
-          "Statement: Almost all mining industries rely on conveyer-belt based systems for loading/unloading of mined materials.",
+          "State true or false. Almost all mining industries rely on conveyer-belt based systems for loading/unloading of mined materials.",
         image_context: null,
         options: [
           { id: "a", text: "True", image: null },
