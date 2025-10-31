@@ -20,8 +20,8 @@ const appConfig = {
       icon: "🔧",
       folder: "IIOT",
       years: [
-        { label: "2025 Jan-Apr", year: 2025, file: "data2025a.js" },
-        { label: "2024 Jul-Oct", year: 2025, file: "data2025b.js" },
+        { label: "2025 Jul-Oct", year: 2025, file: "data2025a.js" },
+        { label: "2025 Jan-Apr", year: 2025, file: "data2025b.js" },
       ],
     },
     {
