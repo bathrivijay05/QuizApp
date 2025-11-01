@@ -474,7 +474,7 @@ window.quizData = [
           { id: "b", text: "1956", image: null },
           { id: "c", text: "1988", image: null },
         ],
-        correct_answers: ["1986"],
+        correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
       {

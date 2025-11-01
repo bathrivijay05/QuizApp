@@ -790,7 +790,7 @@ window.quizData = [
           { id: "a", text: "True", image: null },
           { id: "b", text: "False", image: null },
         ],
-        correct_answers: ["a"],
+        correct_answers: ["b"],
         type: "True/False",
       },
       {
