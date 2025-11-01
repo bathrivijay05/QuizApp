@@ -924,8 +924,10 @@ window.quizData = [
           "In object-oriented design, operations is also called ____. Which is/are of the following is true.",
         image_context: null,
         options: [
-          { id: "a", text: "function", image: null },
-          { id: "b", text: "method", image: null },
+          { id: "a", text: "method", image: null },
+          { id: "b", text: "member function", image: null },
+          { id: "c", text: "member process", image: null },
+          { id: "d", text: "member procedure", image: null },
         ],
         correct_answers: ["a", "b"],
         type: "Multi-Select MCQ",
