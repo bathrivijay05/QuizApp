@@ -1333,7 +1333,11 @@ window.quizData = [
         question_text:
           "To construct CFG we assign numbers to all statements of the program, create a node in the CFG for each numbered statement and ____",
         image_context: null,
-        options: [{ id: "a", text: "Add edges", image: null }],
+        options: [
+          { id: "a", text: "Add edges", image: null },
+          { id: "b", text: "Complement the CFG", image: null },
+          { id: "c", text: "Sort the nodes", image: null },
+        ],
         correct_answers: ["a"],
         type: "Single-Select MCQ",
       },
